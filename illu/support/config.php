@@ -98,5 +98,6 @@ function getEmpDetails($emp_id){
 
 /* END SPECIFIC TO WEBAPP */
 	require_once('class.myPDO.php');
-	$con=new myPDO('flowtork','root','');	
+	$con=new myPDO('flowtork','root','');
+
 ?>
