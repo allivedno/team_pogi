@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <link href="css/login1.css" rel="stylesheet">
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
 
@@ -67,6 +67,40 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="support.php">Support</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                 <div class="row">
+                                        <div class="col-md-12">
+                                         <label class="label">
+                                            Login</label>
+                                            <br><br><br>
+                                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                    <div class="form-group">
+                                                         <label class="label">Email address or Username</label><br>
+                                                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address or Username" required>
+                                                    </div><br>
+                                                    <div class="form-group">
+                                                         <label class="label">Password</label>
+                                                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                         <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                         <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                         
+                                                    </div>
+                                             </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            New here ? <a href="frmsignup.php"><b>Join Us</b></a>
+                                        </div>
+                                 </div>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
