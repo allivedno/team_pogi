@@ -84,7 +84,7 @@ if (isset($_POST['submit']))
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Illuminate|Support</title>
+    <title>Illuminate|Signup</title>
 <style type="text/css">
     
     iframe
