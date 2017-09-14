@@ -1,0 +1,103 @@
+a.ex1:hover, a.ex1:active {color: red;}
+a.plain:hover {
+    text-decoration: none;
+} 
+#login-dp{
+    min-width: 350px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:white;
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .head{
+   
+    border-bottom:1px solid black;
+    clear:both;
+    text-align: right;
+    padding:10px;
+    width: 100%;
+}
+#login-dp .bottom{
+    background-color:white;
+    border-top:1px solid black;
+    clear:both;
+    padding:10px;
+    width: 100%;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+#login-dp .label{
+    color: #ffff;
+    background-color:white;
+    font-size: 16px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: black;
+
+       
+    }
+}
+#wrapper {
+  text-align:center;
+  border:1px solid #7F7F7F;
+  width:150px;
+  margin:25px auto;
+  padding:25px;
+  background-color:#E3E4E4;
+}
+
+#myTimer {
+  font:20px Tahoma bold;
+ 
+}
+
+button {
+  width:125px;
+  padding:10px;
+}
+
+.btnEnable {
+  background-color:#E6F9D2;
+  border:1px solid #97DE4C;
+  color:#232323;
+  cursor:pointer;
+}
+
+.btnDisable {
+  background-color:#FCBABA;
+  border:1px solid #DD3939;
+  color:#232323;
+  cursor:wait;
+}
