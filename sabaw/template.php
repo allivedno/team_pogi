@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -34,37 +35,34 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#aboutflowtork">About Flowtork</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="products.php">Products</a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link" href="projects.phps">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contactus">Contact Us</a>
+            </li>
             <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
+
 
         </ul>
         <!-- Links -->
 
-        <!-- Search form -->
+        <!-- Search form 
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        </form>
+        </form>-->
     </div>
     <!-- Collapsible content -->
 
 </nav>
-<!--/.Navbar-->
 <body>
 
 

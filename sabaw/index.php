@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Home</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -14,8 +15,6 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-
-    <link href="css/login1.css" rel="stylesheet">
 </head>
 
 
@@ -313,12 +312,69 @@
     <!--Panel 2-->
     <div class="tab-pane fade" id="panel2" role="tabpanel">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-            reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-            porro voluptate odit minima.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-            reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-            porro voluptate odit minima.</p>
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-3">
+<img class="img-fluid" src="img/clients/Aboitiz.png"><br>
+<img class="img-fluid" src="img/clients/Cemex.png"><br>
+<img class="img-fluid" src="img/clients/Daelim.png"><br>
+<img class="img-fluid" src="img/clients/DMCI.png"><br>
+<img class="img-fluid" src="img/clients/Fortune.png"><br>
+<img class="img-fluid" src="img/clients/Leighton.png"><br>
+<img class="img-fluid" src="img/clients/Monde.png"><br>
+<img class="img-fluid" src="img/clients/Philip.png"><br>
+<img class="img-fluid" src="img/clients/Shell.png"><br>
+
+
+
+
+</div>
+
+<div class="col-md-3">
+<img class="img-fluid" src="img/clients/Bauer.png"><br>
+<img class="img-fluid" src="img/clients/Chevron.png"><br>
+<img class="img-fluid" src="img/clients/Eagle_Cement.png"><br>
+<img class="img-fluid" src="img/clients/Holcim.png"><br>
+<img class="img-fluid" src="img/clients/Lycopodium.png"><br>
+<img class="img-fluid" src="img/clients/Nestle.png"><br>
+<img class="img-fluid" src="img/clients/PPI.png"><br>
+<img class="img-fluid" src="img/clients/Siemens.png"><br>
+<img class="img-fluid" src="img/clients/TeamEnergy.png"><br>
+</div>
+
+
+<div class="col-md-3">
+
+<img class="img-fluid" src="img/clients/Caltex.png">
+<img class="img-fluid" src="img/clients/coca-cola.png"><br>
+<img class="img-fluid" src="img/clients/FirstGas.png"><br>
+<img class="img-fluid" src="img/clients/Kao.png"><br>
+<img class="img-fluid" src="img/clients/Manila_Water.png"><br>
+<img class="img-fluid" src="img/clients/Petron.png"><br>
+<img class="img-fluid" src="img/clients/Quezonpower.png"><br>
+<img class="img-fluid" src="img/clients/B.png"><br>
+<img class="img-fluid" src="img/clients/SMYAMAMURA.png"><br>
+</div>
+
+
+<div class="col-md-3">
+<img class="img-fluid" src="img/clients/Cebu_Energy.png">
+<img class="img-fluid" src="img/clients/CoralBay.png"><br>
+<img class="img-fluid" src="img/clients/Fluor.png"><br>
+<img class="img-fluid" src="img/clients/Kepco.png"><br>
+<img class="img-fluid" src="img/clients/Maynilad.png"><br>
+<img class="img-fluid" src="img/clients/Phil.png"><br>
+<img class="img-fluid" src="img/clients/Riotuba.png"><br>
+<img class="img-fluid" src="img/clients/SolaneLPG.png"><br>
+</div>
+
+
+
+
+</div>
+</div>
     </div>
     <!--/.Panel 2-->
     <!--Panel 3-->
@@ -468,7 +524,7 @@ Fax: + (63-2) 534 12 17
 
 
 <br><br><br>
-
+<section id="contactus">
 <div class="container">
 <div class="col-md-12">
 <h2>Contact Us</h2>
@@ -525,7 +581,7 @@ Sales and Services Department :
 
 
 
-
+</section>
 
 
     <!-- /Start your project here-->
