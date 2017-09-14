@@ -6450,7 +6450,7 @@ button:focus {
 }
 
 .btn-white.dropdown-toggle:hover, .btn-white.dropdown-toggle:focus {
-  background-color: white !important;
+  background-color: black !important;
 }
 
 .btn-outline-white {
@@ -6644,7 +6644,7 @@ button:focus {
 }
 
 .navbar .dropdown-menu a:hover {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 @media (max-width: 600px) {
@@ -6727,7 +6727,7 @@ button:focus {
 
 .navbar.navbar-dark .breadcrumb .nav-item .nav-link,
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: #000;
   transition: 0.35s;
 }
 
@@ -6743,7 +6743,7 @@ button:focus {
 
 .navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link:hover,
 .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover {
-  color: #fff;
+  color: #000;
 }
 
 .navbar.navbar-dark .navbar-toggler {
