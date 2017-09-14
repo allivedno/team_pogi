@@ -2,25 +2,16 @@
 <html lang="en">
 
 <head>
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+
+<?php require_once("header.php"); ?>
+
+
 </head>
 
 
 
 <!--Navbar-->
-<?php require_once("header.php"); ?>
+
 <!--/.Navbar-->
 <body>
 <!--Carousel Wrapper-->
@@ -587,33 +578,10 @@ Sales and Services Department :
     <!-- /Start your project here-->
 <br><br><br><br>
 <!--Footer-->
-<footer class="page-footer stylish-color-dark">
 
-    <!--Footer Links-->
+<?php require_once("footer.html"); ?>
 
-    <!--/.Footer Links-->
 
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2015 • Flowtork Technologies Corporation</a>
-
-        </div>
-    </div>
-    <!--/.Copyright-->
-
-</footer>
-<!--/.Footer-->
-                
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>
