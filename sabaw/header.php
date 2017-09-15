@@ -3,7 +3,8 @@
 
     require_once("support/config.php");
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
  <title>Flowtork</title>
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -16,7 +17,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <!-- <link href="css/mdb.min.css" rel="stylesheet"> -->
+   <!--  <link href="css/mdb.min.css" rel="stylesheet" -->
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -50,7 +51,7 @@
                 <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#aboutflowtork">About Flowtork</a>
+                <a class="nav-link page-scroll" href="index.php#aboutflowtork">About Flowtork</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="products.php">Products</a>
@@ -68,44 +69,7 @@
             <!-- Dropdown -->
             <?php if(!isLoggedIn()): ?>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
-                          
-                            <ul id="login-dp" class="dropdown-menu">
-                           
-                                <li>
-
-                                     <div class="row">
-
-                                            <div class="col-md-12">
-                                             <label class="head">
-                                                <h3>Login</h3></label>
-                                               
-                                                
-
-                                                 <form class="form" role="form" method="post" action="login.php" accept-charset="UTF-8" id="login-nav">
-                                                        <div class="form-group">
-                                                             <label class="label">Email address or Username</label><br>
-                                                             <input name="email" type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address or Username" required>
-                                                        </div><br>
-                                                        <div class="form-group">
-                                                             <label class="label">Password</label>
-                                                             <input name="password" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                             <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                                        </div>
-                                                        <div class="checkbox">
-                                                             
-                                                        </div>
-                                                 </form>
-                                            </div>
-                                            <div class="bottom text-center">
-                                                New here ? <a class="ex1" href="frmsignup.php"><b>Join Us</b></a>
-                                            </div>
-                                     </div>
-                                </li>
-                            </ul>
+                    <a class="nav-link page-scroll" href="frmlogin.php">Login</a>      
                 </li>
             <?php else: ?>
                 <li class="nav-item dropdown">

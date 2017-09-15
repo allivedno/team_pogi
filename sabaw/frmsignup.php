@@ -50,7 +50,8 @@ if (isset($_POST['submit']))
                 
 
                 $con->commit(); 
-                
+
+                insertAuditLog($_SESSION[WEBAPP]['user'],"{$inputs['name']} Created a account.");
         
                 redirect('sendemailcode.php?email='.$inputs['email']);
 

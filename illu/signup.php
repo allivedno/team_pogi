@@ -55,6 +55,8 @@ if (isset($_POST['submit']))
 				
 		
 
+				insertAuditLog("wew","filed.");
+				die;
 
 					//var_dump($supervisor);
 				if (!empty($inputs['email']))  {

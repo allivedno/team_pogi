@@ -5,14 +5,15 @@ echo "Loading ...";
 if (!empty($_GET['email']))  {
 	$user_information=$con->myQuery("SELECT * FROM `user` WHERE email=? AND is_deleted=0 LIMIT 1",array($_GET['email']))->fetch(PDO::FETCH_ASSOC);
 
-                        $header="Email Verification";
-                        $message="Hi ".$user_information['name'].",\n this is to verify your email address.\nyour verification code is ".$user_information['email_code'];
+                        $header="Hi <b>".$user_information['full_name'] ."</b>,";
+                        $message="Your validation code:<br> <h1>".$user_information['email_code']."</h1><br>Please use this validation code to verify your email." ;
                         $message=email_template($header,$message);
                         //var_dump($email_settings);
                         //emailer($username,$password,$from,$to,$subject,$body,$host='tls://smtp.gmail.com',$port=465
                         PHPemailer('cjayconocono@gmail.com','cJay1996',"glypp@flowtork.com",$user_information['email'],"Verify your email address",$message,'tls://smtp.gmail.com',587);
 
-                        redirect('frmemailverify.php?email='.$user_information['email']);
+                        echo "<script>alert('a confirmation email has been sent to ".$user_information['email'].".'); window.location = 'frmemailverify.php?email=".$user_information['email']."';</script>";
+                        // redirect('frmemailverify.php?email='.);
 
 } else {
 	die;

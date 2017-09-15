@@ -5,13 +5,13 @@ $error = '';
 $email_check=$con->myQuery("SELECT * FROM `user` WHERE email=? AND is_deleted=0 LIMIT 1",array($_GET['email']))->fetch(PDO::FETCH_ASSOC);
 
 
-if (empty($email_check['email_code'])) {
-    redirect('frmsignup.php');
+// if (empty($email_check['email_code'])) {
+//     redirect('frmsignup.php');
 
-}
-if (empty($_GET['email'])) {
-    redirect('frmsignup.php');
-}
+// }
+// if (empty($_GET['email'])) {
+//     redirect('frmsignup.php');
+// }
 
 
 if (isset($_POST['submit']))
@@ -29,7 +29,7 @@ if (isset($_POST['submit']))
         //die;
         //redirect('index.php');
      } else {
-        echo "wrong";
+        echo "<script>alert('Invalid validation code!');</script>";
      }
 }
 
@@ -58,17 +58,17 @@ if (isset($_POST['submit']))
                     <form action = 'frmemailverify.php?email=<?php echo $_GET['email'];
 ?>' method="post">
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-sm-4 offset-4">
                                 <div class="form-group"><br><br>
-                                    <span class="default"><h5>Enter Code here ...</h5></span><br>
-                                    <input type="text" class="form-control" placeholder="Code *" onkeyup="keytype()" name="code" required data-validation-required-message="Please enter code." style="text-align:center; font-size: 20px;">
+                                    <span class="default"><h5>Enter your validation code here ...</h5></span><br>
+                                    <input type="text" class="form-control code"  placeholder="Code *" onkeyup="" name="code" required data-validation-required-message="Please enter code." style="text-align:center; font-size: 20px;">
                                     <span><p class="help-block text-danger"></p></span>
 
                                 </div>
                                 
                                 
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-5 offset-4">
                                 <div class="form-group">
                                      Resend code?
                                     <button type="button" id="myBtn" class="btnDisable" disabled onclick="window.location = 'sendemailcode.php?email=<?php echo $_GET['email']; ?>'"><div id="myTimer"></div></button>
@@ -126,4 +126,10 @@ function countDown() {
   <footer>
        <?php require_once("footer.html"); ?>
     </footer>
+
+<script type="text/javascript">
+$(function(){
+     $(".code").inputmask("9999", {"placeholder": "####"});
+ });
+</script>
 </html>
