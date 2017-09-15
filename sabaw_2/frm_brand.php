@@ -90,6 +90,10 @@ require_once('config.connect.php');
 
 
 
+
+
+
+
 <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
   </div>
   <br>
@@ -150,7 +154,7 @@ if($exceed > 20)
 	echo "</p></center></td>";
 
 	echo "<td style='vertical-align: middle;' >";
-		echo "<center><button type='button' class='btn btn-warning'><i class='glyphicon glyphicon-edit'></i></button> <button type='button' class='btn btn-danger'><i class='glyphicon glyphicon-remove'></i></button></center>";
+		echo "<center><button type='button' class='btn btn-warning' data-toggle='modal_edit' data-target='#myModal_edit'><i class='glyphicon glyphicon-edit'></i></button> <button type='button' class='btn btn-danger'><i class='glyphicon glyphicon-remove'></i></button></center>";
 	echo "</td>";
 
 	echo "</tr>";
@@ -160,7 +164,28 @@ if($exceed > 20)
 
 
 ?>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
+<!-- Modal -->
+<div id="myModal_edit" class="modal_edit fade" role="dialog">
+  <div class="modal_edit-dialog">
+
+    <!-- modal_edit content-->
+    <div class="modal_edit-content">
+      <div class="modal_edit-header">
+        <button type="button" class="close" data-dismiss="modal_edit">&times;</button>
+        <h4 class="modal_edit-title">modal_edit Header</h4>
+      </div>
+      <div class="modal_edit-body">
+        <p>Some text in the modal_edit.</p>
+      </div>
+      <div class="modal_edit-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal_edit">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 
@@ -171,7 +196,6 @@ if($exceed > 20)
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js'></script>
 <script src='http://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js'></script>
-
     <script src="DatatableR/js/js.datatable.js"></script>
 
 <script type="text/javascript">

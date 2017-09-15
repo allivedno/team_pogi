@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <title>PRODUCTS</title>
   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".show-text").click(function(){
+      $('#myModal').find(".lots-of-text").toggle();
+        $('#myModal').modal('handleUpdate');
+    });
+});
+</script>
+<style type="text/css">
+.bs-example{
+  margin: 20px;
+}
+.lots-of-text{
+    display: none;
+}
+</style>
+
+
 
 
   
@@ -79,7 +100,7 @@ require_once('config.connect.php');
     </div> 
      <div class="form-group">
       <label >Brand Description:</label>
-      <input type="textarea" class="form-control" name="BrandDesc" id="BrandDesc" required>
+      <textarea style="resize:none;" class="form-control" rows='7' name="BrandDesc" id="BrandDesc" required></textarea>
     </div>
 
 
@@ -118,12 +139,21 @@ $query=mysqli_query($c1,'SELECT * FROM brand');
 
 echo "<tbody>";
 
+
+
+
+
+
 while ($fetch=mysqli_fetch_assoc($query))
 	{
 	
 	echo "<tr>";
 	echo "<td style='vertical-align: middle;' ><center><p>";
 		echo $fetch['brand_id'];
+
+
+
+
 	echo "</p></center></td>";
 
 	echo "<td style='vertical-align: middle;' ><center><p>";
@@ -149,11 +179,103 @@ if($exceed > 20)
 
 	echo "</p></center></td>";
 
+
+
 	echo "<td style='vertical-align: middle;' >";
-		echo "<center><button type='button' class='btn btn-warning'><i class='glyphicon glyphicon-edit'></i></button> <button type='button' class='btn btn-danger'><i class='glyphicon glyphicon-remove'></i></button></center>";
+  
+  $Mymodal="Mymodal".$fetch['brand_id'];
+$Yourmodal="Yourmodal".$fetch['brand_id'];
+		echo '<center>
+
+
+
+     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#'.$Mymodal.'" ><i class="glyphicon glyphicon-edit"></i></button>
+     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#'.$Yourmodal.'"><i class="glyphicon glyphicon-remove"></i></button></center>';
+
+
+
+
 	echo "</td>";
 
 	echo "</tr>";
+
+
+   
+echo
+"
+    
+    <!-- Modal HTML -->
+    <div id='".$Mymodal."' class='modal fade'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+                    <h4 class='modal-title'>EDIT FORM </h4>
+                </div>
+                <div class='modal-body'>
+                 
+ <form  role='form' action='edit_brand.php' method='post' id='brandeditpost' enctype='multipart/form-data'>
+    <div class='form-group'>
+      <input type='text' class='form-control' id='editBrandId' name='editBrandId'  style='opacity:0;' value='".$fetch['brand_id']."'>
+      <label >Brand Name:</label>
+      <input type='text' class='form-control' id='editBrandName' name='editBrandName' placeholder='".$fetch['brand_name']."' >
+    </div>
+  <div class='form-group'>
+      <label >Brand Picture:</label>
+      <input type='file' name='editBrandPic' accept='image/*' class='form-control'   id='editBrandPic' >
+    </div> 
+     <div class='form-group'>
+      <label >Brand Description:</label>
+      <textarea style='resize:none;' class='form-control' rows='7' name='editBrandDesc' id='editBrandDesc' placeholder='".$fetch['brand_desc']."' ></textarea>
+    </div>
+
+
+ 
+
+
+
+                </div>
+                <div class='modal-footer'>
+                    <button type='submit' name='submit' id='submit' class='btn btn-success'>Save</button>
+                    <button type='button' class='btn btn-danger' data-dismiss='modal'>Close</button>
+  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+";
+
+
+//==========================================================================
+echo
+"
+    
+    <!-- Modal HTML -->
+    <div id='".$Yourmodal."' class='modal fade'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+                    <h4 class='modal-title'>EDIT FORM </h4>
+                </div>
+                <div class='modal-body'>
+                 
+ <form  role='form' action='del_brand.php' method='post' id='branddelpost' enctype='multipart/form-data'>
+    <div class='form-group'>
+      <input type='text' class='form-control' id='delBrandId' name='delBrandId'  style='opacity:0;' value='".$fetch['brand_id']."'>
+      <label ><center>Are you sure you want to delete '".$fetch['brand_name']."' ?</center></label>
+      
+    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='submit' name='submit' id='submit' class='btn btn-success'>Yes</button>
+                    <button type='button' class='btn btn-danger' data-dismiss='modal'>No</button>
+  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+";
 	} 
  echo "</tbody>";        
 
@@ -164,17 +286,33 @@ if($exceed > 20)
 
 
 
-  </table>
 
+
+
+
+  </table>
+<!-- Button trigger modal -->
+<div class="bs-example">
+    <div class="alert alert-info fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Note!</strong>  bakit ka tinatamad wag ka tamarin loko ka para to sa kinabukasan mo
+    </div>
+    
+    <!-- Button HTML (to Trigger Modal) -->
+  
 </div>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js'></script>
 <script src='http://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js'></script>
 
+
+
+
     <script src="DatatableR/js/js.datatable.js"></script>
 
 <script type="text/javascript">
+// Javascript
 
   $(function(){
         $("#brandpost").on("submit", function(event) {
@@ -189,6 +327,30 @@ if($exceed > 20)
 
             $.ajax({
                 url: "sub_brand.php",
+                type: "post",
+                data: formData,
+                success: function(d) {
+                   
+                }
+            });
+        });
+    }); 
+
+
+    $(function(){
+        $("#brandeditpost").on("submit", function(event) {
+            event.preventDefault();
+
+            var formData = {
+              'editBrandId': $('input[name=editBrandId]').val()  
+                'editBrandName': $('input[name=editBrandName]').val()  
+                 'editBrandPic': $('input[name=editBrandPic]').val() 
+                  'editBrandDesc': $('input[name=editBrandDesc]').val() 
+            };
+            console.log(formData);
+
+            $.ajax({
+                url: "edit_brand.php",
                 type: "post",
                 data: formData,
                 success: function(d) {
