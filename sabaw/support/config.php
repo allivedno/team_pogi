@@ -67,25 +67,26 @@ function AllowUser($user_type_id){
 	return false;
 }
 
-function insertAuditLog($user,$action){
-	#user,action,date
-	if(file_exists("./audit_log.txt")){
-		$user=htmlspecialchars($user);
-		$action=htmlspecialchars($action);
-		$new_input=json_encode(array($user,$action,date('Y-m-d H:i:s')),JSON_PRETTY_PRINT);
-		$file = fopen("./audit_log.txt", "r+");
-		fseek($file,-4,SEEK_END);
-		fwrite($file, ",".$new_input."\n\t]\n}");
-		fclose($file);
-	}
-	else{
-		$file = fopen("./audit_log.txt", "w+");
+function insertAuditLog($user, $action)
+{
+    #user,action,date
+    if (file_exists("./audit_log.txt")) {
+        $user=htmlspecialchars($user);
+        $action=htmlspecialchars($action);
+        $new_input=json_encode(array($user,$action,date('Y-m-d H:i:s')), JSON_PRETTY_PRINT);
+        $file = fopen("./audit_log.txt", "r+");
+        fseek($file, -4, SEEK_END);
+        fwrite($file, ",".$new_input."\n\t]\n}");
+        fclose($file);
+    } else {
+        $file = fopen("./audit_log.txt", "w+");
 
-		$data=json_encode(array("data"=>array(array("NONE","INITIAL START UP",date('Y-m-d H:i:s')))),JSON_PRETTY_PRINT);
-		fwrite($file, $data);
-		fclose($file);
-	}
+        $data=json_encode(array("data"=>array(array("NONE","INITIAL START UP",date('Y-m-d H:i:s')))), JSON_PRETTY_PRINT);
+        fwrite($file, $data);
+        fclose($file);
+    }
 }
+
 
 function PHPemailer($username, $password, $from, $to, $subject, $body, $host='tls://smtp.gmail.com', $port=587) {
     require_once("support/PHPMailer/PHPMailerAutoload.php");
@@ -186,7 +187,7 @@ function email_template($header, $message)
         <td class="container" width="600" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto;" valign="top">
             <div class="content" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; max-width: 600px; display: block; margin: 0 auto; padding: 20px;">
                      <div class="login-logo">
-                                        <img src="http://flowtork.com/images/flowtorklogo.png" class='img-responsive center-block' >
+                                        <center><img src="http://flowtork.com/images/flowtorklogo.png" class='img-responsive center-block' ></center>
                                     </div>
                 <table class="main" width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; border-radius: 3px; background-color: white; margin: 0; border: 1px solid #e9e9e9;" bgcolor="white"><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;"><td class="alert alert-warning" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: black; font-weight: 500; text-align: left; border-radius: 3px 3px 0 0; background-color: #fff; margin: 0; padding: 20px;" bgcolor="#348EDA" valign="top">
                     {$header}

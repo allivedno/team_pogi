@@ -3,6 +3,11 @@
 
 
     require_once("support/config.php");
+// die;
+//     if(!isLoggedIn()) {
+//         redirect('index.php');
+//     }
+    
 
     if (isset($_POST["email"]) && isset($_POST["password"]))
     {
@@ -24,11 +29,14 @@
         }else {
             // echo encryptIt($_POST['password']);
             // echo "wrong username or password";
-            echo "<script>alert('wrong username or password'); window.location = 'index.php';</script>";
+
+            echo "<script>alert('wrong username or password'); window.location = 'frmlogin.php';</script>";
 
             
         }
 
+    } else {
+        redirect('index.php');
     }
 
 

@@ -13,6 +13,8 @@
 
             echo "login seccessful";
             $_SESSION[WEBAPP]['user'] = $user['email'];
+
+            insertAuditLog($_SESSION[WEBAPP]['user'],"{$user['full_name']} Logged in.");
             //redirect('index.php');
         }else {
             
@@ -58,7 +60,7 @@
                             <div class="login-box-body" style="border-radius: 10px;border: #A5A0A4 1px solid;">
                                 
                                     <div class="login-logo">
-                                        <img src="img/ftclogo.png" class='img-responsive center-block' >
+                                        <a href="index.php"><img src="img/ftclogo.png" class='img-responsive center-block' ></a>
                                     </div><!-- /.login-logo -->
                                
                                 <h3><p class="login-box-msg ">Login to your Account</p></h3> 
