@@ -15,13 +15,18 @@
 
         else if (!empty($user)) {
 
-            echo "login seccessful";
+            // echo "login seccessful";
+            
             $_SESSION[WEBAPP]['user'] = $user['email'];
-            redirect('index.php');
+
+            echo "<script>alert('login seccessful'); window.location = 'index.php';</script>";
+            
         }else {
-            echo encryptIt($_POST['password']);
-            echo "wrong username or password";
-            die;
+            // echo encryptIt($_POST['password']);
+            // echo "wrong username or password";
+            echo "<script>alert('wrong username or password'); window.location = 'index.php';</script>";
+
+            
         }
 
     }

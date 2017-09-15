@@ -16,9 +16,10 @@
             $_SESSION[WEBAPP]['user'] = $user['id'];
             redirect('index.php');
         }else {
-            echo encryptIt($_POST['password']);
-            echo "wrong username or password";
-            die;
+            // echo encryptIt($_POST['password']);
+            echo "<script>alert('wrong username or password');</script>";
+           
+            
         }
 
     }

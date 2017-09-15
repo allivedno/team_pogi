@@ -101,7 +101,7 @@ $(function(){
                         <div class="row">
                             <div class="col-md-16">
                                 <div class="form-group">
-                                <span class="badge"><h2>Enter Code here ...</h2></span><br><br><br>
+                                <span class="badge"><h2>Enter validation code here ...</h2></span><br><br><br>
                                     <input type="text" class="form-control .tin" placeholder="Code *" onkeyup="keytype()" name="code" required data-validation-required-message="Please enter code." style="text-align:center; font-size: 20px;">
                                     <span><p class="help-block text-danger"></p></span>
                                 </div>
