@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>CATEGORY</title>
+  <title>PRODUCTS</title>
   
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -78,22 +78,64 @@ require_once('config.connect.php');
 
 
 
-    <h1>CategoryS</h1>
+    <h1>PRODUCTS</h1>
     <hr>
       <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
-<button id="addbtn" type='button'  style="width:100%;" class="btn btn-info">Add</button>
+<button id="addbtn" type='button'  style="width:100%;" class="btn btn-info">ASSIGN</button>
 
 
 
 <div id="panel">
 
  
-  <form  role="form" action="sub_Category.php" method="post" id="Categorypost" enctype="multiCategory/form-data">
-    <div class="form-group">
-      <label >Category Name:</label>
-      <input type="text" class="form-control" id="CategoryName" name="CategoryName" required>
-    </div>
+  <form  role="form" action="sub_assign.php" method="post" >
+<?php
+
+
+
+?>
+<div class="form-group">
+  <label for="BrandName">Brand Name</label>
+  <select class="form-control" name="BrandName" id="BrandName" required>
+
+  <?php
+
+  $table2 = "SELECT * from `brand`";
+  $run_query2b = mysqli_query($c1,$table2);         
+
+   while ($row = mysqli_fetch_assoc($run_query2b))
+   {
+
+    echo " <option >".$row['brand_name']."</option>";
+   }
+
+   ?>
+
+
+  </select>
+</div>
+
+<div class="form-group">
+ <label for="CategoryName">Category Name <br>mutiple select list (hold shift to select more than one)</label>
+      <select multiple class="form-control" name="CategoryName[]" id="CategoryName">
+<?php
+
+  $table3 = "SELECT * from `category`";
+  $run_query3b = mysqli_query($c1,$table3);         
+
+   while ($rowed = mysqli_fetch_assoc($run_query3b))
+   {
+    echo " <option>".$rowed['category_name']."</option>";
+   }
+
+
+   ?>
+      </select>
+</div>
+
+
+
 
 
 
@@ -115,9 +157,10 @@ require_once('config.connect.php');
     <caption class="sr-only"></caption>
     <thead>
       <tr>
-        <th  role="gridcell">CATEGORY ID</th>
+        <th  role="gridcell">ASSIGN ID</th>
+        <th  role="gridcell">BRAND NAME</th>
         <th  role="gridcell">CATEGORY NAME</th>
-        <th  ">CATEGORY ACTION</th>
+        <th  >ASSIGN ACTION</th>
       </tr>
     </thead>
 
@@ -125,7 +168,7 @@ require_once('config.connect.php');
     <?php 
 
 
-$query=mysqli_query($c1,'SELECT * FROM Category');
+$query=mysqli_query($c1,'SELECT assign.assign_id,brand.brand_name,category.category_name FROM ((assign INNER JOIN brand ON assign.brand_id = brand.brand_id) INNER JOIN category ON assign.category_id = category.category_id)');
 
 
 echo "<tbody>";
@@ -140,30 +183,29 @@ while ($fetch=mysqli_fetch_assoc($query))
 	
 	echo "<tr>";
 	echo "<td style='vertical-align: middle;' ><center><p>";
-		echo $fetch['category_id'];
-
-
-
-
+		echo $fetch['assign_id'];  
 	echo "</p></center></td>";
 
 	echo "<td style='vertical-align: middle;' ><center><p>";
-		echo $fetch['category_name'];
+		echo $fetch['brand_name'];
 	echo "</p></center></td>";
+  echo "<td style='vertical-align: middle;' ><center><p>";
+    echo $fetch['category_name'];
+  echo "</p></center></td>";
 
 
+ 
 
 
 
 	echo "<td style='vertical-align: middle;' >";
   
-  $Mymodal="Mymodal".$fetch['category_id'];
-$Yourmodal="Yourmodal".$fetch['category_id'];
+  $Mymodal="Mymodal".$fetch['assign_id'];
+$Yourmodal="Yourmodal".$fetch['assign_id'];
 		echo '<center>
 
 
 
-     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#'.$Mymodal.'" ><i class="glyphicon glyphicon-edit"></i></button>
      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#'.$Yourmodal.'"><i class="glyphicon glyphicon-remove"></i></button></center>';
 
 
@@ -175,43 +217,9 @@ $Yourmodal="Yourmodal".$fetch['category_id'];
 
 
    
-echo
-"
+
     
-    <!-- Modal HTML -->
-    <div id='".$Mymodal."' class='modal fade'>
-        <div class='modal-dialog'>
-            <div class='modal-content'>
-                <div class='modal-header'>
-                    <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
-                    <h4 class='modal-title'>EDIT FORM </h4>
-                </div>
-                <div class='modal-body'>
-                 
- <form  role='form' action='edit_Category.php' method='post' id='Categoryeditpost' enctype='multiCategory/form-data'>
-    <div class='form-group'>
-      <input type='text' class='form-control' id='editCategoryId' name='editCategoryId'  style='opacity:0;' value='".$fetch['Category_id']."'>
-      <label >Category Name:</label>
-      <input type='text' class='form-control' id='editCategoryName' name='editCategoryName' placeholder='".$fetch['Category_name']."' >
-    </div>
-
- 
-
-
- 
-
-
-
-                </div>
-                <div class='modal-footer'>
-                    <button type='submit' name='submit' id='submit' class='btn btn-success'>Save</button>
-                    <button type='button' class='btn btn-danger' data-dismiss='modal'>Close</button>
-  </form>
-                </div>
-            </div>
-        </div>
-    </div>
-";
+   
 
 
 //==========================================================================
@@ -228,10 +236,10 @@ echo
                 </div>
                 <div class='modal-body'>
                  
- <form  role='form' action='del_Category.php' method='post' id='Categorydelpost' enctype='multiCategory/form-data'>
+ <form  role='form' action='del_assign.php' method='post' id='branddelpost' enctype='multipart/form-data'>
     <div class='form-group'>
-      <input type='text' class='form-control' id='delCategoryId' name='delCategoryId'  style='opacity:0;' value='".$fetch['Category_id']."'>
-      <label ><center>Are you sure you want to delete '".$fetch['Category_name']."' ?</center></label>
+      <input type='text' class='form-control' id='delassignId' name='delassignId'  style='opacity:0;' value='".$fetch['assign_id']."'>
+      <label ><center>Are you sure you want to delete '".$fetch['brand_name']." Tag in ".$fetch['category_name']."' ?</center></label>
       
     </div>
                 </div>
@@ -277,56 +285,12 @@ echo
 
 
 
-    <script src="DatatableR/js/js.datatable.js"></script>
+    <script src="DatatableR/js/js.datatableass.js"></script>
 
 <script type="text/javascript">
 // Javascript
 
-  $(function(){
-        $("#Categorypost").on("submit", function(event) {
-            event.preventDefault();
-
-            var formData = {
-                'CategoryName': $('input[name=CategoryName]').val()  
-                 'CategoryPic': $('input[name=CategoryPic]').val() 
-                  'CategoryDesc': $('input[name=CategoryDesc]').val() 
-            };
-            console.log(formData);
-
-            $.ajax({
-                url: "sub_Category.php",
-                type: "post",
-                data: formData,
-                success: function(d) {
-                   
-                }
-            });
-        });
-    }); 
-
-
-    $(function(){
-        $("#Categoryeditpost").on("submit", function(event) {
-            event.preventDefault();
-
-            var formData = {
-              'editCategoryId': $('input[name=editCategoryId]').val()  
-                'editCategoryName': $('input[name=editCategoryName]').val()  
-                 'editCategoryPic': $('input[name=editCategoryPic]').val() 
-                  'editCategoryDesc': $('input[name=editCategoryDesc]').val() 
-            };
-            console.log(formData);
-
-            $.ajax({
-                url: "edit_Category.php",
-                type: "post",
-                data: formData,
-                success: function(d) {
-                   
-                }
-            });
-        });
-    }); 
+ 
 </script>
 </body>
 </html>
