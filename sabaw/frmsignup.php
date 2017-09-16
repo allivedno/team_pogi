@@ -104,14 +104,14 @@ if (isset($_POST['submit']))
                                 </div><br>
                                 <div class="form-group">
                                  <span class="default"><h4>Password</h4></span>
-                                    <span><input type="text" class="form-control" placeholder="Password *" onkeyup="keytype()" name="password" required data-validation-required-message="Please enter your password.">
+                                    <span><input type="password" class="form-control" placeholder="Password *" onkeyup="keytype()" name="password" required data-validation-required-message="Please enter your password.">
                                    <p class="help-block text-danger"></p></span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                 <span class="default"><h4>Contact Number</h4></span>
-                                    <span><input type="text" class="form-control" placeholder="Email *" onkeyup="keytype()" name="contact" required data-validation-required-message="Please enter your contact number.">
+                                    <span><input type="text" class="form-control" placeholder="Contact Number *" onkeyup="keytype()" name="contact" required data-validation-required-message="Please enter your contact number.">
                                    <p class="help-block text-danger"></p></span>
                                 </div><br>
 
