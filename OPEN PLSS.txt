@@ -1,4 +1,0 @@
-master sa sabaw ko linipat ung akin tas pa update ng database
-dun sa sabaw/database/flowtork.v2.sql
-
-nag provide po ko ng picture kung ano po ung nilipat ko sa sabaw
