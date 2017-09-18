@@ -17,7 +17,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-   <!--  <link href="css/mdb.min.css" rel="stylesheet" -->
+    <link href="css/mdb.min.css" rel="stylesheet"
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -45,8 +45,12 @@
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+<a class="navbar-brand" href="index.php">
+                <img src="img/flowtorkheaderlogo.png" id="kvw-logo" border="0" />
+            </a>
         <!-- Links -->
         <ul class="navbar-nav mr-auto ">
+            
             <li class="nav-item">
                 <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -65,11 +69,18 @@
             <li>
          
             </li>
-            </li>
+        
             <!-- Dropdown -->
+           
+
+        </ul>
+        <ul class="navbar-nav">
             <?php if(!isLoggedIn()): ?>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                     <a class="nav-link page-scroll" href="frmlogin.php">Login</a>      
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="frmsignup.php">Sign-up</a>      
                 </li>
             <?php else: ?>
                 <li class="nav-item dropdown">
@@ -77,7 +88,7 @@
                     </button>
 
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="frm_brand.php">Upload product</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                         <div class="dropdown-divider"></div>
@@ -87,7 +98,6 @@
                    
                 </li>
             <?php endif; ?>
-
 
         </ul>
         <!-- Links -->

@@ -70,6 +70,9 @@ $(document).ready(function(){
 </head>
 <?php
 require_once('config.connect.php');
+
+require_once("header.php"); 
+
 ?>
 <body>
   <div class="container">

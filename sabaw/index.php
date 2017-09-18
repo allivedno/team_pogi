@@ -534,8 +534,7 @@ http://www.flowtork.com
 
 <h4>HEAD OFFICE</h4>
 <br>
-Unit 1,2 & 10, 2nd Floor, CIFRA Building<br>
-#641 Boni Avenue<br>
+#352 Wayan St. <br>Barangka Ilaya, <br>
 Mandaluyong City 1550 Philippines<br>
 <br>    
 Contact No(s):<br>

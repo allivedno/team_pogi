@@ -4,7 +4,7 @@
 <html>
 
 <br><br><br>
-<section id="contact">
+<section id="forgot">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 offset-4">
@@ -17,38 +17,25 @@
                                     </div> -->
                                     <!-- /.login-logo -->
                               <br>
-                                <h3><p class="h5 text-center mb-4">Login to your Account</p></h3> 
-                                               
+                                <h3><p class="h5 text-center mb-4">Forgot Password</p></h3> 
+                                               <br>
                                          <!-- <div class="col-md-12 text-center">         -->
 
-                                                 <form class="form" role="form" method="post" action="login.php" accept-charset="UTF-8" id="login-nav">
+                                                 <form class="form" role="form" method="post" action="forgotpass.php" accept-charset="UTF-8" id="login-nav">
                                                         <div class="md-form">
                                                         
                                                             		<i class="fa fa-envelope prefix grey-text"></i>
                                                              		<input name="email" type="email" class="form-control" id="defaultForm-email" required>
                                                         	           <label for="defaultForm-email">Your email</label>
                                                         </div>
-
                                                         <div class="form-group">
-                                                             
-                                                             
-                                                             <div class="md-form">
-                                                                    <i class="fa fa-lock prefix grey-text"></i>
-   																	<input name="password" type="password" class="form-control" id="defaultForm-pass" required>
-   															          <label for="defaultForm-pass">Your password</label>
-                                                            </div>
-                                                             <div class="help-block text-right"><a href="frm_forgotpass.php">Forget the password ?</a></div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                             <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                             <button type="submit" name="submit" class="btn btn-warning btn-block">Submit</button>
                                                         </div>
                                                         <div class="checkbox">
                                                              
                                                         </div>
                                                  </form>
-                                                  	<div class="bottom text-center">
-	                                                		New here ? <a class="ex1" href="frmsignup.php"><b>Join Us</b></a>
-	                                            	</div>
+                                                  
 	                                     </div>
                             </div>
                                            
@@ -58,6 +45,6 @@
 
         </div>
 </section>
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 <?php   require_once("footer.html"); ?>		
 </html>
