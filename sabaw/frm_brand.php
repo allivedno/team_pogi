@@ -70,6 +70,9 @@ $(document).ready(function(){
 </head>
 <?php
 require_once('config.connect.php');
+
+//require_once("header.php"); 
+
 ?>
 <body>
   <div class="container">
@@ -126,7 +129,7 @@ require_once('config.connect.php');
         <th  role="gridcell">BRAND NAME</th>
         <th  role="gridcell">BRAND PICTURE</th>
         <th  role="gridcell">BRAND DESCRIPTION</th>
-        <th  ">BRAND ACTION</th>
+        <th  >BRAND ACTION</th>
       </tr>
     </thead>
 
@@ -149,7 +152,7 @@ while ($fetch=mysqli_fetch_assoc($query))
 	
 	echo "<tr>";
 	echo "<td style='vertical-align: middle;' ><center><p>";
-		echo $fetch['brand_id'];
+		echo $fetch['brand_id'];  
 
 
 

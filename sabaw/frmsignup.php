@@ -75,82 +75,80 @@ if (isset($_POST['submit']))
 </head>
 
   <body>
-
+<br><br>
 
      <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Register/Signup</h2>
-                    <h3 class="section-subheading text-muted"><a class="plain" href="index.php">www.flowtork.com</a></h3>
+                     <h3><p class="h5 text-center mb-4">Register/Signup</p></h3> 
+    
+                    
                 </div>
-            </div><br><br><br><br>
+            </div><br><br>
             <div class="row">
                 <div class="col-lg-12">
                     <form action = 'frmsignup.php' method="post">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group">
                                
-                                <span class="default"><h4>Name</h4></span>
-                                    <input type="text" class="form-control" placeholder="Your Name *" onkeyup="keytype()" name="name" id="name" required data-validation-required-message="Please enter your name.">
-                                    <span><p class="help-block text-danger"></p></span>
+                                    
+                               <div class="md-form">
+                                <i class="fa fa-users prefix grey-text"></i>
+                               
+                                    <input type="text" class="form-control" onkeyup="keytype()" name="name" id="name" >
+                                    <label for="name">Your Name</label>
                                 </div><br>
-                                <div class="form-group">
-                                 <span class="default"><h4>Email</h4></span>
-                                    <input type="email" class="form-control" placeholder="Email *" name="email" id="email" required data-validation-required-message="Please enter your email.">
-                                    <span><p class="help-block text-danger"></p></span>
+                               <div class="md-form">
+                                    <i class="fa fa-envelope prefix grey-text"></i>
+                                    <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email.">
+                                    <label for="email">Your Email</label>
                                 </div><br>
-                                <div class="form-group">
-                                 <span class="default"><h4>Password</h4></span>
-                                    <span><input type="text" class="form-control" placeholder="Password *" onkeyup="keytype()" name="password" required data-validation-required-message="Please enter your password.">
-                                   <p class="help-block text-danger"></p></span>
+                                <div class="md-form">
+                                    <i class="fa fa-key prefix grey-text"></i>
+                                   <input type="password" class="form-control" id="password" name="password" required data-validation-required-message="Please enter your password.">
+                                   <label for="password">Your Password</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                <span class="default"><h4>Contact Number</h4></span>
-                                    <span><input type="text" class="form-control" placeholder="Email *" onkeyup="keytype()" name="contact" required data-validation-required-message="Please enter your contact number.">
-                                   <p class="help-block text-danger"></p></span>
+                                <div class="md-form">
+                                    <i class="fa fa-phone prefix grey-text"></i>
+                                    <input type="text" class="form-control" id="contact" name="contact" required data-validation-required-message="Please enter your contact number.">
+                                   <label for="contact">Your Contact Number</label>
                                 </div><br>
-
-                                 <div class="form-group">
-                                  <span class="default"><h4>Security Question</h4></span>
-                                    <span>
-
-                                    <select class="form-control" placeholder="Email *" onkeyup="keytype()" name='SQ1' required data-validation-required-message="Please enter your Security Question." style=" height:40px;">
-                                      <option value=""><font size='150'>Security Question 1&nbsp</h1></option>
-                                      <option value="What is your Dream job?">What is your Dream job?</option>
-                                      <option value="Who was your first crush?">Who was your first crush?</option>
-                                      <option value="What was the name of your first pet?">What was the name of your first pet?</option>
-                                    </select>
-                                   <p class="help-block text-danger"></p></span>
+                                    <div class="md-form">
+                                    <i class="fa fa-shield prefix grey-text"></i>
+                                   
+                                    <div class="offset-1">
+                                        <select class="form-control"  id='sq' name='SQ1' required data-validation-required-message="Please enter your Security Question." style=" height:52px;">
+                                          <option value=""><font size='150'>Security Question 1&nbsp</h1></option>
+                                          <option value="What is your Dream job?">What is your Dream job?</option>
+                                          <option value="Who was your first crush?">Who was your first crush?</option>
+                                          <option value="What was the name of your first pet?">What was the name of your first pet?</option>
+                                        </select>
+                                    </div>
+                                 
                                 </div><br>
-                                <div class="form-group">
-                                 <span class="default"><h4>Answer</h4></span>
-                                    <span><input type="text" class="form-control" placeholder="Answer *" onkeyup="keytype()" name="Ans1" required data-validation-required-message="Please enter your Answer.">
-                                   <p class="help-block text-danger"></p></span>
+                               <div class="md-form">
+                                    <i class="fa fa-shield prefix grey-text"></i>
+                                   
+                                    <input type="text" class="form-control" id="ans" name="Ans1" required data-validation-required-message="Please enter your Answer.">
+                                   <label for="ans">Your Answer</label>
                                 </div>
                             </div>
                             
                             <div class="col-lg-12 text-center">
-                                <div id="success"></div><br><br>
-                                <button type="submit" class="btn btn-xl" name="submit">Register</button>
+                                <div id="success"></div><br>
+                                <button type="submit" class="btn btn-primary btn-md" name="submit">Register</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <center>
-    <div class="form-group">
-
-    </iframe>
-    </div>
-    </center>
+      
+    <br><br><br>
     </section>
 
 

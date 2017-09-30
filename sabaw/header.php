@@ -17,7 +17,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-   <!--  <link href="css/mdb.min.css" rel="stylesheet" -->
+    <link href="css/mdb.min.css" rel="stylesheet"
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -45,30 +45,25 @@
           <li><a href="index.php#contactus">Contact Us</a></li>
 
 
+
             <?php if(!isLoggedIn()): ?>
-                <li class="nav-item dropdown">
+                <li>
                     <a href="frmlogin.php">Login</a>      
-                </li>
             <?php else: ?>
+                <li class="drop"><a href="frmlogin.php"> <?php echo $_SESSION[WEBAPP]["user"]; ?> </a> 
+
+                <ul>
+                    <a>Ldasda</a>
+                    <a>Ldasasdda</a>
+                </ul>
+</li>
+            <?php endif; ?>      
+
+<body>
 
 
 
-          <li><a class="drop" href="#"><?php echo $_SESSION[WEBAPP]['user']; ?>Dropdown</a>
-            <ul>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li>     <a class="dropdown-item" href="#">Another action</a></li>
 
-
-
-              <li><a class="dropdown-item" href="logout.php">Log-out</a></li>
-            </ul>
-          </li>
-              <?php endif; ?>
-
- 
-
-        </ul>
-      </nav>
       <!-- ################################################################################################ -->
     </header>
   </div>

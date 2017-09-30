@@ -94,8 +94,8 @@ function PHPemailer($username, $password, $from, $to, $subject, $body, $host='tl
     $mail->isSMTP();
     $mail->Host = 'tls://smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'cjayconocono@gmail.com';
-    $mail->Password = 'cJay1996';
+    $mail->Username = 'glyphinfo17@gmail.com';
+    $mail->Password = 'glyph2017';
     $mail->SMTPSecure = 'tls';
     $mail->Port = '587';
 
