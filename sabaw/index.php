@@ -27,17 +27,17 @@
     <div class="carousel-inner" role="listbox">
         <!--First slide-->
         <div class="carousel-item active">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+            <img class="d-block w-100" src="img/carousel/image4.jpg" alt="First slide">
         </div>
         <!--/First slide-->
         <!--Second slide-->
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+            <img class="d-block w-100" src="img/carousel/image2.jpg" alt="Second slide">
         </div>
         <!--/Second slide-->
         <!--Third slide-->
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+            <img class="d-block w-100" src="img/carousel/image3.jpg" alt="Third slide">
         </div>
         <!--/Third slide-->
     </div>
@@ -57,55 +57,15 @@
 
 
 
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading"><i class="fa fa-gears"></i> &nbsp;&nbsp;Field of Expertise</h6>
+    </div>
 
-<br><br>
-
-    <!-- Start your project here-->
-<section id="aboutflowtork">
-    
-
-
-<div class="container">
-<div class="col-md-12">
-<h2>HISTORY</h2><br>
-<p>Flowtork Technologies Corporation, formerly known as Flowtork Industrial Corporation, was established on September 23, 2004 by a group of young professionals with technical know-how who were by then been well-trained and experienced to provide comprehensive and prompt technical services on all the products they offer. The business , after a corporate re-structuring, was transformed as Flowtork Technologies Corporation on December 10, 2007.</p>
-
-<p>Flowtork Technologies Corporation has been engaged in supply of industrial instrumentation equipment such as electric and pneumatic actuators, valves, flow meters, mixers, agitators and marine loading arms to vital industries in the Philippines. In addition , the company also provides technically-skilled manpower and after-sales services of the products supplied to its various clients.</p>
-
-<p>The company has continued to expand as more professional and technical people have been added to its roster in order to cater to its growing list of clientele. In September 2012, Flowtork Technologies Corporation opened its Cebu City branch. With the growing demand for instrumentation equipment and services, Flowtork envisions itself to remain in the forefront of servicing this demand though continuous improvements in its products and services. With its history and track record, clients are assured that Flowtork will continue with its commitment of service which adds real value to the client's business.</p>
-</div>
-</div>
-<div class="container">
-<div class="col-md-12">
-<h2>INDUSTRIES SERVED</h2><br>
 <div class="row">
-<div class="col-md-4" style="font-size: 15px;">
-• Power<br> 
-• Cement<br>
-• Manufacturing Plant<br>
-• Oil & Gas<br>
-• Electronics / Semiconductor<br>
-• Steel Mills<br>
-• Mining & Ore Processing<br>
-</div>
-<div class="col-md-4" style="font-size: 15px;">   
-• Food & Beverages<br>
-• Pharmaceuticals<br>
-• Water & Waste Water<br>
-• Petrochemicals<br>
-• Pulp & Paper<br>
-• Bio-energy (Power)<br>
-• Sugar<br>
-</div>
-</div>
-</div>
-</div>
 
-<br>    
-<div class="container">
-<div class="col-md-12">
-<h2>FIELD OF EXPERTISE</h2><br>
-<div class="row">
 <div class="col-md-4">
 <b>Field / Shop Servicing</b><br> 
 • Diagnostic<br>
@@ -141,84 +101,23 @@
 
 
 </div>
-</div>
 
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container">
-
-</div>
-<br><br><br>
-
-
-<div class="container">
-
-<div class="row">
-
-<!--Card-->
-<div class="card col-md-4">
-
-    <!--Card image-->
-    <div class="view overlay hm-white-slight"><center><br>
- <i class="fa fa-eye" style="font-size: 102px;"></i></center>
+    <div class="group">
+      <div class="one_third first"><a class="imgover" href="#"><img src="img/demo/320x480.png" alt=""></a></div>
+      <div class="two_third">
+        <figure class="group">
+          <div class="one_half first btmspace-30"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
+          <div class="one_half btmspace-30"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
+          <div class="one_half first"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
+          <div class="one_half"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
+        </figure>
+      </div>
     </div>
-
-    <!--Card content-->
-    <div class="card-body">
-        <!--Title-->
-        <h4 class="card-title"><center>Our Vision</center></h4>
-        <!--Text-->
-        <p class="card-text">WE WILL ALWAYS ENDEAVOR to be one of the leaders in process instrumentation products in terms of continuous growth, profitability and judiciously utilizing our resources in pursuit of quality and innovation after-sales service.</p>
-
-        <p class="card-text">Verily, to actively enjoined our peers in nation-building and ultimately contributing quality life for our workers and every Filipino in general.</p>
-    </div>
-
-</div>
-<!--/.Card-->
-                
-
-
-
-
-
-<!--Card-->
-<div class="card col-md-4">
-
-    <!--Card image-->
-    <div class="view overlay hm-white-slight">
-
-<center><br>
- <i class="fa fa-industry" style="font-size: 102px;"></i></center>
-
-    </div>
-
-    <!--Card content-->
-    <div class="card-body">
-        <!--Title-->
-        <h4 class="card-title"><center>Mission</center></h4>
-        <!--Text-->
-
-
-        <p class="card-text">We shall build a well-trained, competent and customer oriented instrumentation company, safely following established standards without compromise and maintain a working force in an atmosphere that provides competitive financial package thus promoting opportunities for professional excellence.</p>
-
-
-        <p class="card-text">In light of the above, we shall be guided by our core values of honesty and integrity, customer satisfaction and of course teamworks for our people.</p>
-
-
-    </div>
-
+    <!-- ################################################################################################ -->
+  </section>
 </div>
 
 
@@ -226,48 +125,104 @@
 
 
 
-<!--Card-->
-<div class="card col-md-4">
 
-    <!--Card image-->
-    <div class="view overlay hm-white-slight">
 
-<center><br>
- <i class="fa fa-black-tie" style="font-size: 102px;"></i></center>
 
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<SECTION id="aboutflowtork">
+<div class="wrapper bgded overlay" style="background-image:url('img/demo/backgrounds/02.png');">
+  <div class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">About Flowtork</h6>
     </div>
+    <div class="group">
+      <div class="two_third first">
+<p>Flowtork Technologies Corporation, formerly known as Flowtork Industrial Corporation, was established on September 23, 2004 by a group of young professionals with technical know-how who were by then been well-trained and experienced to provide comprehensive and prompt technical services on all the products they offer. The business , after a corporate re-structuring, was transformed as Flowtork Technologies Corporation on December 10, 2007.</p>
 
-    <!--Card content-->
-    <div class="card-body">
-        <!--Title-->
-        <h4 class="card-title"><center>Corporate Principle</center></h4>
-        <!--Text-->
-        <p class="card-text">To maintain market visibility in the instrumentation industry.</p>
+<p>Flowtork Technologies Corporation has been engaged in supply of industrial instrumentation equipment such as electric and pneumatic actuators, valves, flow meters, mixers, agitators and marine loading arms to vital industries in the Philippines. In addition , the company also provides technically-skilled manpower and after-sales services of the products supplied to its various clients.</p>
 
-
-        <p class="card-text">To achieve customer delight through prompt and quality service, responsive and innovative products and services, efficient organizational structure and administrative capabilities.</p>
-
-        <p class="card-text">To establish competitive-edge through improved process instrumentation facilities and use of well-trained force of professionals.</p>
-
+<p>The company has continued to expand as more professional and technical people have been added to its roster in order to cater to its growing list of clientele. In September 2012, Flowtork Technologies Corporation opened its Cebu City branch. With the growing demand for instrumentation equipment and services, Flowtork envisions itself to remain in the forefront of servicing this demand though continuous improvements in its products and services. With its history and track record, clients are assured that Flowtork will continue with its commitment of service which adds real value to the client's business.</p>
+        <footer><a class="btn" href="#">Read More &raquo;</a></footer>
+      </div>
+      <div class="one_third">
+        <p><strong>Malesuada congue pulvinar</strong></p>
+        <figure class="videocontainer"> 
+          <!-- Important: Any type of video called via "iframe" must be in a container using class="videocontainer" -->
+          <iframe src="https://www.youtube.com/watch?v=SDTZ7iX4vTQ  " allowfullscreen style="border:none;"></iframe>
+          <figcaption>Lacus vitae ullamcorper cum sociis natoque penatibus et magnis dis.</figcaption>
+        </figure>
+      </div>
     </div>
-
+    <!-- ################################################################################################ -->
+  </div>
 </div>
+</SECTION>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
 
 
+
+
+
+
+
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <ul class="nospace group services">
+      <li class="one_third first">
+        <article><a href="#"><i class="fa fa-2x fa-industry" style="font-size: 120px;"></i></a>
+          <h6 class="heading font-x1" style="font-size: 32px;">Mission</h6>
+                 <p>We shall build a well-trained, competent and customer oriented instrumentation company, safely following established standards without compromise and maintain a working force in an atmosphere that provides competitive financial package thus promoting opportunities for professional excellence.</p>
+
+
+        <p>In light of the above, we shall be guided by our core values of honesty and integrity, customer satisfaction and of course teamworks for our people.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fa fa-2x fa-eye" style="font-size: 120px;"></i></a>
+          <h6 class="heading font-x1" style="font-size: 32px;">Vision</h6>
+        <p>WE WILL ALWAYS ENDEAVOR to be one of the leaders in process instrumentation products in terms of continuous growth, profitability and judiciously utilizing our resources in pursuit of quality and innovation after-sales service.</p>
+
+        <p>Verily, to actively enjoined our peers in nation-building and ultimately contributing quality life for our workers and every Filipino in general.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fa fa-2x fa-black-tie" style="font-size: 120px;"></i></a>
+          <h6 class="heading font-x1" style="font-size: 32px;">Corporate Principle</h6>
+        <p>To maintain market visibility in the instrumentation industry.</p>
+
+
+        <p>To achieve customer delight through prompt and quality service, responsive and innovative products and services, efficient organizational structure and administrative capabilities.</p>
+
+        <p>To establish competitive-edge through improved process instrumentation facilities and use of well-trained force of professionals.</p>
+        </article>
+      </li>
+
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
 </div>
-<!--/.Card-->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
 
 
-
-</div>
-</section>
-
-
-<br><br><br>
-
-
+    <!-- Start your project here-->
 
 <section id="tabs">
     
@@ -278,16 +233,16 @@
 <!-- Nav tabs -->
 <ul class="nav nav-tabs nav-justified">
     <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Major Suppliers</a>
+        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab" style="color: black;">Major Suppliers</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Major Clients</a>
+        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab" style="color: black;">Major Clients</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Services</a>
+        <a class="nav-link" data-toggle="tab" href="#panel3" role="tab" style="color: black;">Services</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#panel4" role="tab">Sales & info Desk</a>
+        <a class="nav-link" data-toggle="tab" href="#panel4" role="tab" style="color: black;">Sales & info Desk</a>
     </li>
 </ul>
 <!-- Tab panels -->
@@ -303,8 +258,10 @@
     <!--Panel 2-->
     <div class="tab-pane fade" id="panel2" role="tabpanel">
         <br>
-<div class="container">
 
+
+<div class="container">
+<div class="col-md-12">
 <div class="row">
 
 <div class="col-md-3">
@@ -366,12 +323,16 @@
 
 </div>
 </div>
+</div>
     </div>
     <!--/.Panel 2-->
     <!--Panel 3-->
     <div class="tab-pane fade" id="panel3" role="tabpanel">
-        <br>
+
+<div class="group">
 <div class="container">
+<div class="col-md-12">
+
         • 24/7 after sales support<br>
         • Preventive Maintenance Inspection (PMI)<br>
        • Installation, Testing and Commissioning<br>
@@ -382,8 +343,8 @@
        • Customizations for Special Application<br>
        • Consultation & Engineering<br>
        • Flow Measurement Data Logging <br>
-
-
+</div>
+</div>
 </div>
 
 
@@ -392,7 +353,9 @@
     <!--/.Panel 4-->
     <div class="tab-pane fade" id="panel4" role="tabpanel">
         <br>
+
 <div class="container">
+<div class="col-md-12">
 <div class="row">
       <img class="img-fluid" src="img/ftclogo.png"> <h2 class="section-heading h1 pt-4">&nbsp;Flowtork Technologies Corp.</h2></div><br>
 <!--Section: Contact v.2-->
@@ -497,7 +460,7 @@ Fax: + (63-2) 534 12 17
 
 </section>
 <!--Section: Contact v.2-->
-
+</div>
 </div>
     </div>
     <!--/.Panel 4-->
@@ -514,6 +477,8 @@ Fax: + (63-2) 534 12 17
 </section>
 
 
+<<<<<<< HEAD
+=======
 <br><br><br>
 <section id="contactus">
 <div class="container">
@@ -573,9 +538,10 @@ Sales and Services Department :
 
 </section>
 
+>>>>>>> 79cf663935c2a22db8a06e54c675e298241980f6
 
     <!-- /Start your project here-->
-<br><br><br><br>
+
 <!--Footer-->
 
 <?php require_once("footer.html"); ?>

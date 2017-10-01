@@ -44,18 +44,18 @@ Armaturen- Und Maschinen-Antriebe (Valve- and Machine Actuators). AUMA is the wo
 
 </div>
 </div>
-<br><br>
+<br><br><br>
 
 <div class="col-md-12">
 <center>
 
-<img class="animated fadeInUp img-fluid" src="img/products/siposlogo.png" style="width:400px;">
+<img class="animated fadeInUp img-fluid" src="img/products/siposlogo.png" style="width: 500px;">
 </center>
 </div>
 
 
 
-<br>
+
 
 <div class="row col-md-12">
 <div class="col-md-6 animated fadeInUp" style="background-color: #33b5e5; color: white; font-size: 21px;"><br><br><br>  

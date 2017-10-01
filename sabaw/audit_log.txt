@@ -25,6 +25,15 @@
 ]
 	,[
     "",
+<<<<<<< HEAD
+    "Miguel Cortez Created a account.",
+    "2017-09-16 19:57:14"
+]
+,[
+    "",
+    "Miguel Cortez Created a account.",
+    "2017-09-16 19:59:25"
+=======
     "Cjay Created a account.",
     "2017-09-18 00:48:30"
 ]
@@ -37,6 +46,7 @@
     "",
     "admin Created a account.",
     "2017-09-18 01:03:36"
+>>>>>>> 79cf663935c2a22db8a06e54c675e298241980f6
 ]
 	,[
     "",

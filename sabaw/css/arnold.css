@@ -8438,3 +8438,17 @@ table.table-sm td,table.table-sm th {
     padding-top: .6rem;
     padding-bottom: .6rem
 }
+.backgroundnav
+{
+	 background-color: #15518d!important;
+	 
+
+}	
+.navlink
+{
+	color: white;
+}
+.footercolor
+{
+	background-color: #15518d;
+}
