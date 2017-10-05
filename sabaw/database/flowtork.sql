@@ -39,6 +39,66 @@ CREATE TABLE `admin_account` (
 insert  into `admin_account`(`id`,`email`,`password`,`full_name`,`is_login`,`is_active`,`is_deleted`,`last_activity`,`contact_no`,`user_type_id`) values 
 (1,'cjayconocono','¿ÁA—:•§§–‹\Z8ºeVó;­Xle©Þ','cjay conocono',0,0,0,'2017-09-14 14:52:36','1234',1);
 
+/*Table structure for table `brand` */
+
+DROP TABLE IF EXISTS `brand`;
+
+CREATE TABLE `brand` (
+  `brand_id` int(100) NOT NULL AUTO_INCREMENT,
+  `brand_name` varchar(255) DEFAULT NULL,
+  `brand_pic` varchar(255) DEFAULT NULL,
+  `brand_desc` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`brand_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+
+/*Data for the table `brand` */
+
+insert  into `brand`(`brand_id`,`brand_name`,`brand_pic`,`brand_desc`) values 
+(1,'KMP','imahe/P .jpeg','HALO'),
+(2,'PMENT','imahe/P PMENT1.jpeg','DORPERM'),
+(3,'KMS','imahe/P KMS2.jpeg','CPE'),
+(4,'Backdoor','imahe/P Backdoor3.jpeg','asd'),
+(5,'VEctor','imahe/P VEctor4.jpeg','3456789012e1dandnajsnkabsda'),
+(6,'sous','imahe/P sous5.jpeg','23456718293qdas mcz '),
+(7,'Pambihira','imahe/P Pambihira6.jpeg','gandaganda mo :D'),
+(8,'Practice','imahe/P Pambihira6.jpeg','sodaasocasci'),
+(9,'test','imahe/P test8.jpeg','test'),
+(10,'','',''),
+(11,'','','');
+
+/*Table structure for table `detail` */
+
+DROP TABLE IF EXISTS `detail`;
+
+CREATE TABLE `detail` (
+  `detail_id` int(100) NOT NULL AUTO_INCREMENT,
+  `detail_desc` varchar(255) DEFAULT NULL,
+  `detail_spec` varchar(255) DEFAULT NULL,
+  `part_id` int(100) DEFAULT NULL,
+  PRIMARY KEY (`detail_id`),
+  KEY `FK_detail` (`part_id`),
+  CONSTRAINT `FK_detail` FOREIGN KEY (`part_id`) REFERENCES `part` (`part_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `detail` */
+
+/*Table structure for table `part` */
+
+DROP TABLE IF EXISTS `part`;
+
+CREATE TABLE `part` (
+  `part_id` int(100) NOT NULL AUTO_INCREMENT,
+  `part_name` varchar(255) DEFAULT NULL,
+  `part_pic` varchar(255) DEFAULT NULL,
+  `part_price` int(100) DEFAULT NULL,
+  `brand_id` int(100) DEFAULT NULL,
+  PRIMARY KEY (`part_id`),
+  KEY `FK_part` (`brand_id`),
+  CONSTRAINT `FK_part` FOREIGN KEY (`brand_id`) REFERENCES `brand` (`brand_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `part` */
+
 /*Table structure for table `user` */
 
 DROP TABLE IF EXISTS `user`;
