@@ -15,6 +15,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="layout/styles/flexslider.css">
 </head>
 
 
@@ -25,7 +26,29 @@
 <br><br>
 
 
+           <div class="col-md-5 single-top">   
+            <div class="flexslider">
+  <ul class="slides">
+    <li data-thumb="img/multi-turn.jpg">
+      <img src="img/multi-turn.jpg"/>
+    </li>
 
+  </ul>
+</div>
+<!-- FlexSlider -->
+  <script defer src="layout/scripts/jquery.flexslider.js"></script>
+<link rel="stylesheet" href="layout/styles/flexslider.css" type="text/css" media="screen" />
+
+<script>
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
+</script>
+                    </div> 
 
 
 
@@ -36,5 +59,5 @@
 <!--Footer-->
 <?php require_once("footer.html"); ?>
 </body>
-
+      <script defer src="layout/scripts/jquery.flexslider.js"></script>
 </html>
