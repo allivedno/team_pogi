@@ -19,7 +19,15 @@
             <link rel="stylesheet" href="layout/styles/products.css">
 </head>
 
+<style type="text/css">
+h2,h5,a
+{
+font-family: Roboto !important;
+font-weight: 600 !important;
+text-decoration: none;
+}
 
+</style>
 
 <!--Navbar-->
 <?php require_once("header.php"); ?>

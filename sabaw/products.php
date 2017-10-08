@@ -19,8 +19,7 @@
 
 <style type="text/css">
     
-.robotuh
-
+.robotuh,p
 {
 font-family: Roboto !important;
 font-weight: 600 !important;
