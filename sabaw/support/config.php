@@ -109,9 +109,10 @@ function insertAuditLog($user, $action)
     $date = new DateTime();
 
     $date_applied=date_format($date, 'Y-m-d');
+    $time_applied=date_format($date, 'g:i A');
     #user,action,date
-    $con->myQuery("INSERT INTO audit_log (username,action,date_applied) VALUES 
-                    ('$user','$action','$date_applied')");
+    $con->myQuery("INSERT INTO audit_log (username,action,date_applied,time_applied) VALUES 
+                    ('$user','$action','$date_applied','$time_applied')");
 }
 
 function email_template($header, $message)

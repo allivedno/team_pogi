@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>PRODUCTS</title>
+  <title>ACTIVITY LOG</title>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -69,7 +69,7 @@ require_once('config.connect.php');
 <br><br><br>
 
 
-    <h1>ACTIVITY LOG</h1>
+    <h1>ACTIVITY LOGS</h1>
     <hr>
       <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
@@ -102,10 +102,12 @@ require_once('config.connect.php');
     <caption class="sr-only"></caption>
     <thead>
       <tr>
-        <th  role="gridcell">USER</th>
+         <th  role="gridcell">LOGS ID</th>
+        <th  role="gridcell">USERNAME</th>
         <th  role="gridcell">ACTION TAKEN</th>
         <th  role="gridcell">DATE</th>
-       
+
+       <th  role="gridcell">TIME</th>
       </tr>
     </thead>
 
@@ -127,6 +129,9 @@ while ($fetch=mysqli_fetch_assoc($query))
   {
   
   echo "<tr>";
+   echo "<td style='vertical-align: middle;' ><center><p>";
+    echo $fetch['id'];  
+  echo "</p></center></td>";
   echo "<td style='vertical-align: middle;' ><center><p>";
     echo $fetch['username'];  
   echo "</p></center></td>";
@@ -134,17 +139,26 @@ while ($fetch=mysqli_fetch_assoc($query))
   echo "<td style='vertical-align: middle;' ><center><p>";
     echo $fetch['action'];
   echo "</p></center></td>";
-  echo "<td style='vertical-align: middle;' ><center><p>";
+  echo "<td style='vertical-align: middle;' >";
     echo $fetch['date_applied'];
-  echo "</p></center></td>";
+  echo "</td>";
 
+
+
+  echo "<td style='vertical-align: middle;' >";
+  
+
+      echo $fetch['time_applied'];
+
+  echo "</td>";
 
   echo "</tr>";
 
 
    
 
-  
+    
+   
   } 
  echo "</tbody>";        
 

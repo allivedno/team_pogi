@@ -11,7 +11,7 @@
                     // $con->myQuery("UPDATE users SET is_login='$is_login' where username=?",array($_POST['username']));
         if (!empty($user)) {
 
-           
+            
             $_SESSION[WEBAPP]['user'] = $user['id'];
 
             insertAuditLog($user['email'],"{$user['full_name']} Logged in.");
