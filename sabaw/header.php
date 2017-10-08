@@ -36,7 +36,7 @@ if(!empty($_SESSION[WEBAPP]['user'])){
 
 
 
-<div class="bgded" style="background-image:url('img/banner2.png');  height:290px"> 
+<div class="bgded img-fluid" style="background-image:url('img/banner2.png');background-size:  100% 100%;background-repeat:  no-repeat;    height:310px"> 
   <!-- ################################################################################################ -->
   <div class="wrapper row1" >
     <header id="header" class="hoc clear"> 
