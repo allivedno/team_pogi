@@ -15,6 +15,12 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
+
+
+
+
+
 </head>
 
 
@@ -39,12 +45,12 @@
                         <!--NOLD ECHO MO PRODUCTS MULA SA DATABASE DITO BY THREE ANG LABAS NIAN A LOOP MO SA TATLO PER ROW-->
                              <!--NOLD ECHO MO PRODUCTS MULA SA DATABASE DITO BY THREE ANG LABAS NIAN A LOOP MO SA TATLO PER ROW-->       
  <div class="col-md-4">
-   <div class="card collection-card">
+   <div class="card collection-card" href="viewprod.php">
             <!--Card image-->
-            <div class="view hm-zoom"><a href="shirts.php">
-                <img src="img/productsample/actuator.png" class="img-fluid" alt="" style="height: 474px; width: 1766px;"></a>
+            <div class="view hm-zoom">
+                 <img src="img/productsample/actuator.png" href="viewprod.php" class="img-fluid" alt="" style="height: 474px; width: 1766px;">
                 <div class="stripe dark">
-                    <a class="fontsize">
+                    <a class="fontsize" href="viewprod.php">
                         <p><center>Electric Actuators<i class="fa fa-chevron-right"></i></p></center>
                     </a>
                 </div>
@@ -69,6 +75,7 @@
     <!-- /Start your project here-->
 <br><br><br><br>
 <!--Footer-->
+<?php require_once("modals.php"); ?>
 <?php require_once("footer.html"); ?>
 </body>
 

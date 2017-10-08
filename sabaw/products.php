@@ -48,7 +48,7 @@ font-weight: 600 !important;
 </center>
 <div class="animated fadeInUp">
 Armaturen- Und Maschinen-Antriebe (Valve- and Machine Actuators). AUMA is the world´s leading manufacturer in valve actuator technology. AUMA have been developing and building electric actuators and valve gearboxes for more than 45 years and is one of the leading manufacturers in the industry. Energy sector, water industry, petro-chemical industry and users from the most diverse industries word wide relies on technologically sophisticated products by AUMA.
-<button type="button" class="btn btn-primary" href="pauma.php" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
+<button type="button" class="btn btn-primary" style="width: 250px;"><a href="pauma.php" style="color : white;"> View Products</a>   &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 </div>
 
 </div>

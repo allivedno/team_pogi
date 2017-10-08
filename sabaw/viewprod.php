@@ -15,49 +15,78 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-      <link rel="stylesheet" href="layout/styles/flexslider.css">
+
+            <link rel="stylesheet" href="layout/styles/products.css">
 </head>
 
 
 
 <!--Navbar-->
 <?php require_once("header.php"); ?>
-<body>
+<body style="background-color: white;">
 <br><br>
 
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center page-title">Products</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product-container">
 
-           <div class="col-md-5 single-top">   
-            <div class="flexslider">
-  <ul class="slides">
-    <li data-thumb="img/multi-turn.jpg">
-      <img src="img/multi-turn.jpg"/>
-    </li>
+          <div class="product-image">
+            <span class="hover-link"></span>
+            <a class="product-link" data-toggle="modal" data-target="#modal-actuator" >view details</a>
+            <img class="img-responsive" src="img/productsample/sub-category/multi-turn.jpg" alt="">
+          </div>
+          <div class="product-description">
+            <div class="product-label">
+              <div class="product-name">
+                <h1>Multi-turn</h1>
+                <p class="price"></p>
+                <p></p>
+              </div>
+            </div>
+            <div class="product-option">
+        <!--      <div class="product-size">
+                <h3>Sizes</h3>
+                <p>XS,S,M,L,XL,XXL</p>
+              </div>
+              <div class="product-color">
+                <h3>Colors</h3>
+                <ul>
+                  <li class="red"></li>
+                  <li class="blue"></li>
+                  <li class="green"></li>
+                  <li class="gray"></li>
+                  <li class="black"></li>
+                  <li class="dark-blue"></li>
+                </ul>
+              </div>
 
-  </ul>
-</div>
-<!-- FlexSlider -->
-  <script defer src="layout/scripts/jquery.flexslider.js"></script>
-<link rel="stylesheet" href="layout/styles/flexslider.css" type="text/css" media="screen" />
+            </div> -->
+          </div>
+        </div>
+      </div>
 
-<script>
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlNav: "thumbnails"
-  });
-});
-</script>
-                    </div> 
-
-
-
-
+    </div>
+  </div>
+  </div>
 
     <!-- /Start your project here-->
 <br><br><br><br>
 <!--Footer-->
+
+
+
+
+
+
+
 <?php require_once("footer.html"); ?>
+<?php include("modals.php"); ?>
 </body>
-      <script defer src="layout/scripts/jquery.flexslider.js"></script>
+
 </html>
