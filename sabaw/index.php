@@ -106,13 +106,13 @@
 <br>
 
     <div class="group">
-      <div class="one_third first"><a class="imgover" href="#"><img src="img/demo/320x480.png" alt=""></a></div>
+      <div class="one_third first"><a class="imgover" href="#"><img src="img/Fields/image1.jpg" alt="" style="height: 458px; width: 320px;"></a></div>
       <div class="two_third">
         <figure class="group">
-          <div class="one_half first btmspace-30"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
-          <div class="one_half btmspace-30"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
-          <div class="one_half first"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
-          <div class="one_half"><a class="imgover" href="#"><img src="img/demo/320x220.png" alt=""></a></div>
+          <div class="one_half first btmspace-30"><a class="imgover" href="#"><img src="img/Fields/image2.png" alt="" style="height: 215px; width: 320px;"></a></div>
+          <div class="one_half btmspace-30"><a class="imgover" href="#"><img src="img/Fields/image4.jpg" alt="" style="height: 215px; width: 320px;"></a></div>
+          <div class="one_half first btmspace-30"><a class="imgover" href="#"><img src="img/Fields/image3.jpg" alt="" style="height: 215px; width: 320px;"></a></div>
+          <div class="one_half"><a class="imgover" href="#"><img src="img/Fields/image5.jpg" alt="" style="height: 215px; width: 320px;"></a></div>
         </figure>
       </div>
     </div>
@@ -133,7 +133,7 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <SECTION id="aboutflowtork">
-<div class="wrapper bgded overlay" style="background-image:url('img/demo/backgrounds/02.png');">
+<div class="wrapper bgded overlay" style="background-image:url('img/fields/image6.jpg');">
   <div class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
@@ -146,7 +146,7 @@
 <p>Flowtork Technologies Corporation has been engaged in supply of industrial instrumentation equipment such as electric and pneumatic actuators, valves, flow meters, mixers, agitators and marine loading arms to vital industries in the Philippines. In addition , the company also provides technically-skilled manpower and after-sales services of the products supplied to its various clients.</p>
 
 <p>The company has continued to expand as more professional and technical people have been added to its roster in order to cater to its growing list of clientele. In September 2012, Flowtork Technologies Corporation opened its Cebu City branch. With the growing demand for instrumentation equipment and services, Flowtork envisions itself to remain in the forefront of servicing this demand though continuous improvements in its products and services. With its history and track record, clients are assured that Flowtork will continue with its commitment of service which adds real value to the client's business.</p>
-        <footer><a class="btn" href="#">Read More &raquo;</a></footer>
+        <!-- <footer><a class="btn" href="#">Read More &raquo;</a></footer> -->
       </div>
       <div class="one_third">
         <p><strong>Malesuada congue pulvinar</strong></p>
@@ -475,6 +475,67 @@ Fax: (02) 717-41-88
 </div>
 
 </div>
+</section>
+
+
+
+<br><br><br>
+<section id="contactus">
+<div class="container">
+<div class="col-md-12">
+<h2>Contact Us</h2>
+<h3>Flowtork Technologies Corporation </h3><br>
+Email: info@flowtork.com<br>
+http://www.flowtork.com
+<br><br>
+
+
+
+</div>
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-6">
+<br><br>    
+
+<h4>HEAD OFFICE</h4>
+<br>
+#352 Wayan St. <br>Barangka Ilaya, <br>
+Mandaluyong City 1550 Philippines<br>
+<br>    
+Contact No(s):<br>
+Sales Department : (Direct Lines)      &nbsp; &nbsp;  +(63-2) 470 43 58 <br>
++(63-2) 534 12 17<br>
+Accounting & HR Department :        &nbsp; &nbsp; &nbsp; &nbsp; +(63-2) 532 40 58<br>
+Projects and Services Department :      +(63-2) 748 97 36<br>
+</div>
+
+
+<div class="col-md-6">
+<br><br>    
+
+<h4>CEBU OFFICE</h4>
+<br>
+4th Floor Ongtiak Building<br>
+General Maxilom Avenue
+<br>
+Cebu City 6000 Philippines<br>
+<br>    
+Contact No(s):<br>
+Sales and Services Department :
+    +(63-32) 406 33 50 <br>
+ &nbsp; &nbsp; &nbsp; &nbsp;+(63-32) 250 65 82<br>
+ &nbsp; &nbsp; &nbsp; &nbsp;+(63-917) 863 23 66<br>
+  &nbsp; &nbsp; &nbsp; &nbsp;+(63-939) 920 91 08<br>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
 </section>
 
 

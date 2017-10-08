@@ -25,7 +25,7 @@
 ]
 	,[
     "",
-<<<<<<< HEAD
+
     "Miguel Cortez Created a account.",
     "2017-09-16 19:57:14"
 ]
@@ -33,7 +33,7 @@
     "",
     "Miguel Cortez Created a account.",
     "2017-09-16 19:59:25"
-=======
+
     "Cjay Created a account.",
     "2017-09-18 00:48:30"
 ]
@@ -46,10 +46,11 @@
     "",
     "admin Created a account.",
     "2017-09-18 01:03:36"
->>>>>>> 79cf663935c2a22db8a06e54c675e298241980f6
+
 ]
 	,[
     "",
+
     "hani Created a account.",
     "2017-10-02 14:01:11"
 ]
@@ -87,6 +88,20 @@
     "1",
     "cjay conocono Logged in.",
     "2017-10-08 14:40:13"
+
+    "arnold Created a account.",
+    "2017-09-27 01:11:17"
+]
+,[
+    "",
+    "Arnold Created a account.",
+    "2017-09-29 04:34:54"
+]
+,[
+    "",
+    "ZANDRA Created a account.",
+    "2017-09-29 05:25:03"
+
 ]
 	]
 }

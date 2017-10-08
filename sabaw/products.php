@@ -17,7 +17,16 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<style type="text/css">
+    
+.robotuh
 
+{
+font-family: Roboto !important;
+font-weight: 600 !important;
+}
+
+</style>
 
 <!--Navbar-->
 <?php require_once("header.php"); ?>
@@ -27,7 +36,7 @@
 
 
 
-<div class="row col-md-12">
+<div class="row col-md-12 robotuh">
 
 <div class="col-md-6">
 <img class="animated fadeInUp img-fluid" src="img/nproducts/auma.jpg">
@@ -39,14 +48,14 @@
 </center>
 <div class="animated fadeInUp">
 Armaturen- Und Maschinen-Antriebe (Valve- and Machine Actuators). AUMA is the world´s leading manufacturer in valve actuator technology. AUMA have been developing and building electric actuators and valve gearboxes for more than 45 years and is one of the leading manufacturers in the industry. Energy sector, water industry, petro-chemical industry and users from the most diverse industries word wide relies on technologically sophisticated products by AUMA.
-<button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
+<button type="button" class="btn btn-primary" style="width: 250px;"><a href="pauma.php" style="color : white;"> View Products</a>   &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 </div>
 
 </div>
 </div>
 <br><br>
 
-<div class="col-md-12">
+<div class="col-md-12 robotuh">
 <center>
 
 <img class="animated fadeInUp img-fluid" src="img/products/siposlogo.png" style="width:400px;">
@@ -57,8 +66,8 @@ Armaturen- Und Maschinen-Antriebe (Valve- and Machine Actuators). AUMA is the wo
 
 <br>
 
-<div class="row col-md-12">
-<div class="col-md-6 animated fadeInUp" style="background-color: #33b5e5; color: white; font-size: 21px;"><br><br><br>  
+<div class="row col-md-12 robotuh">
+<div class="col-md-6 animated fadeInUp" style="background-color: #33b5e5; color: white; font-size: 16px;"><br><br><br>  
 SIPOS Aktorik GmbH has been independently active in the market since 1999. Arising from Siemens actuator division, SIPOS is the only one of the worldwide leading actuator manufacturers have access to 100 years of experience in this field. Holistic product know-how, from planning, solution development and commissioning up to service. <button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 </div>
 
@@ -72,9 +81,9 @@ SIPOS Aktorik GmbH has been independently active in the market since 1999. Arisi
 
 
 <div style="background-image: url(img/nproducts/drehmo2.png); height: 700px;">
-<div class="row col-md-12">
-<img class="img-fluid" src="img/products/drehmo.png" style="height: 100px;">
-<div class="col-md-8" style="color: white; font-size:21px;">
+<div class="row col-md-12 robotuh">
+<img class="img-fluid animated fadeInUp" src="img/products/drehmo.png" style="height: 100px;">
+<div class="col-md-8 animated fadeInUp" style="color: white; font-size:18px;">
 <br>
 Wherever material flows through pipelines in liquid, gas or powder form several kinds of valves are used to shut off or to regulate the rate of flow or pressure. For reliable remote operation of these valves, whether they be globe, gate, ball or butterfly valves or damper, DREHMO electromechanical actuators have been employed successfully over the world for several decades. <button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 </div>
@@ -85,15 +94,15 @@ Wherever material flows through pipelines in liquid, gas or powder form several 
 
 
 <div>
-<div class="row col-md-12">
+<div class="row col-md-12 robotuh">
 
-<div class="col-md-6 img-fluid" style="background-image: url(img/nproducts/ekato.jpg); height: 500px;">
+<div class="col-md-6 img-fluid animated fadeInUp" style="background-image: url(img/nproducts/ekato.jpg); height: 500px;">
 
 </div>
-<div class="col-md-6">
+<div class="col-md-6 animated fadeInUp">
 <br>
 <br>
-<img class="img-fluid" src="img/products/EKATO_logo.png"><br><br>
+<img class="img-fluid animated fadeInUp" src="img/products/EKATO_logo.png"><br><br>
 Manufacturer of customized industrial agitators, complete plants and seals for the process industry such as Chemicals, plastics and polymers, pharmaceuticals, biotechnology, paints and coatings, flue gas desulfurization for power stations, hydrometallurgy, cosmetics and food. Member companies: EKATO Rühr- und Mischtechnik GmbH (large agitators for complex mixing processes) ; FLUID Misch- und Dispergiertechnik GmbH (modular industrial agitators); EKATO SYSTEMS GmbH (systems for blending, homogenizing and drying solid and semi-solid products, as well as high-quality mechanical seals and supply system)  <button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button> <br><br><br><br>
 
 
@@ -106,9 +115,9 @@ Manufacturer of customized industrial agitators, complete plants and seals for t
 
 
 
-<div class="col-md-12" style="background-image: url(img/nproducts/geprod.jpg); height: 700px; color: white; font-size: 24px;">
+<div class="col-md-12 robotuh" style="background-image: url(img/nproducts/geprod.jpg); height: 700px; color: white; font-size: 24px;">
 <br><br>
-<div class="col-md-8">
+<div class="col-md-8 animated fadeInUp">
 GE Measurement & Control is a leading innovator in sensor-based measurement, inspection, asset condition monitoring, controls, and radiation measurement solutions that deliver accuracy, productivity and safety to customers in a wide range of industries, including oil & gas, power generation, aerospace, transportation and healthcare. <button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 
 </div>
@@ -124,12 +133,12 @@ GE Measurement & Control is a leading innovator in sensor-based measurement, ins
 <div class="col-md-6">
 <br>
 <br><br><br>
-<center><img src="img/products/FMC_loading.jpg" class="img-fluid"></center>
+<center><img src="img/products/FMC_loading.jpg" class="img-fluid animated fadeInUp"></center>
 <br><br><br>
 </div>
 
 
-<div class="col-md-6">
+<div class="col-md-6 animated fadeInUp robotuh">
 <br><br><br><br>
 FMC Technologies, Inc., is a leading global provider of technology solutions for the energy industry. Named by FORTUNE® Magazine as the World's Most Admired Oil and Gas Equipment, Service Company in 2012. FMC Technologies designs, manufactures and services technologically sophisticated systems and products such as subsea production and processing systems, surface wellhead systems, high pressure fluid control equipment, measurement solutions, and marine loading systems for the oil and gas industry. <button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 <br><br><br>
@@ -141,7 +150,7 @@ FMC Technologies, Inc., is a leading global provider of technology solutions for
 
 
 <div class="row col-md-12">
-<div class="col-md-6 animated fadeInUp" style="background-color: #15518d; color: white; font-size: 21px;"><br><br><br>  
+<div class="col-md-6 animated fadeInUp robotuh" style="background-color: #15518d; color: white; font-size: px;"><br><br><br>  
 SIPOS Aktorik GmbH has been independently active in the market since 1999. Arising from Siemens actuator division, SIPOS is the only one of the worldwide leading actuator manufacturers have access to 100 years of experience in this field. Holistic product know-how, from planning, solution development and commissioning up to service. <button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 </div>
 
@@ -160,7 +169,7 @@ SIPOS Aktorik GmbH has been independently active in the market since 1999. Arisi
 
 
 
-<div class="col-md-6"><br><br>
+<div class="col-md-6 robotuh"><br><br>
 MERRICK Industries, Inc. - industry-leader in technology which has experience and expertise in designing and manufacturing of high quality material handling products that are reliable, provide repeatable results, and are extremely accurate. Serving the belt scale and feeder industry since 1908 and as the inventor of dynamic weighing and weigh feeding system. At MERRICK, a wide selection of quality weighing systems allows them to handle a variety of dry bulk materials and applications ranging from cement to food products, power generation, mining, pharmaceuticals, steel, plastics, paper, chemicals, building materials, and even wastewater treatment. <button type="button" class="btn btn-primary" style="width: 250px;">View Products &nbsp;<i class="fa fa-chevron-right"> </i> </button>
 <br><br><br><br>
 <br><br><br>
@@ -169,7 +178,7 @@ MERRICK Industries, Inc. - industry-leader in technology which has experience an
 </div>
 </div>
 
-<div class="col-md-12">
+<div class="col-md-12 robotuh">
 <br>
     <center>
 <img class="img-fluid" src="img/products/koso_logo.png" style="height: 120px;">
@@ -181,7 +190,7 @@ KOSO group has developed a diverse range of high-quality control valves greatly 
 </div>
 
 
-<div class="col-md-12">
+<div class="col-md-12 robotuh">
 <br>
     <center>
 <img class="img-fluid" src="img/products/Posiwell_logo.png" style="height: 120px;">
@@ -195,6 +204,7 @@ Posiwell is a joint development between : Trisome Technical Services & Supply Pt
 
 
 
+</body>
 
 
 
@@ -202,6 +212,5 @@ Posiwell is a joint development between : Trisome Technical Services & Supply Pt
 <br><br><br><br>
 <!--Footer-->
 <?php require_once("footer.html"); ?>
-</body>
 
 </html>
