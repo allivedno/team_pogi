@@ -169,7 +169,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
                       <a href="#" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="adminlogout.php" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -224,7 +224,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
               </ul>
             </li>
              <li class="treeview">
-              <a href="#">
+              <a href="admin.php?form=company">
                 <i class="fa fa-files-o"></i>
                 <span>COMPANIES</span>
                <!--  <span class="label label-primary pull-right">4</span> -->
@@ -279,8 +279,8 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
               </a>
              
             </li>
-            <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-            <li class="header">LABELS</li>
+           
+            <li class="header">ACCOUNT</li>
             <li><a href="admin.php?form=profile"><i class="fa fa-circle-o text-red"></i> <span>PROFILE</span></a></li>
             <li><a href="admin.php?form=changepass"><i class="fa fa-circle-o text-yellow"></i> <span>CHANGE PASSWORD</span></a></li>
             <li><a href="admin.php?form=defaultpass"><i class="fa fa-circle-o text-aqua"></i> <span>DEFAULT PASSWORD</span></a></li>
@@ -347,9 +347,15 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
           require_once("frm_assign.php"); 
 
       }
-      if ($_GET['form'] == "product") {
+       if ($_GET['form'] == "company") {
 
           require_once("frm_brand.php"); 
+
+      
+      }
+      if ($_GET['form'] == "product") {
+
+          require_once("frm_part.php"); 
 
       
       }
