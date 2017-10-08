@@ -67,25 +67,6 @@ function AllowUser($user_type_id){
 	return false;
 }
 
-function insertAuditLog($user, $action)
-{
-    #user,action,date
-    if (file_exists("./audit_log.txt")) {
-        $user=htmlspecialchars($user);
-        $action=htmlspecialchars($action);
-        $new_input=json_encode(array($user,$action,date('Y-m-d H:i:s')), JSON_PRETTY_PRINT);
-        $file = fopen("./audit_log.txt", "r+");
-        fseek($file, -4, SEEK_END);
-        fwrite($file, ",".$new_input."\n\t]\n}");
-        fclose($file);
-    } else {
-        $file = fopen("./audit_log.txt", "w+");
-
-        $data=json_encode(array("data"=>array(array("NONE","INITIAL START UP",date('Y-m-d H:i:s')))), JSON_PRETTY_PRINT);
-        fwrite($file, $data);
-        fclose($file);
-    }
-}
 
 
 function PHPemailer($username, $password, $from, $to, $subject, $body, $host='tls://smtp.gmail.com', $port=587) {
@@ -120,6 +101,17 @@ function getUserDetails($emp_id){
 function getAdminDetails($admin_id){
     global $con;
        return $con->myQuery("SELECT * FROM admin_account WHERE id=? LIMIT 1",array($admin_id))->fetch(PDO::FETCH_ASSOC);
+}
+function insertAuditLog($user, $action)
+{
+    global $con;
+
+    $date = new DateTime();
+
+    $date_applied=date_format($date, 'Y-m-d');
+    #user,action,date
+    $con->myQuery("INSERT INTO audit_log (username,action,date_applied) VALUES 
+                    ('$user','$action','$date_applied')");
 }
 
 function email_template($header, $message)

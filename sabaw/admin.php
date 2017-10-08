@@ -206,7 +206,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
               
             </li>
             <li class="treeview">
-              <a href="#">
+              <a href="admin.php?form=auditlog">
                 <i class="fa fa-files-o"></i>
                 <span>ACTIVITY LOGS</span>
                <!--  <span class="label label-primary pull-right">4</span> -->
@@ -317,6 +317,11 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
 
   <?php 
     if (!empty($_GET['form'])) {
+      if ($_GET['form'] == "auditlog") {
+
+          require_once("audit_log.php"); 
+
+      }
        if ($_GET['form'] == "profile") {
 
           require_once("adminprofile.php"); 

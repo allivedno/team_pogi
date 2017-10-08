@@ -14,7 +14,7 @@
            
             $_SESSION[WEBAPP]['user'] = $user['id'];
 
-            insertAuditLog($_SESSION[WEBAPP]['user'],"{$user['full_name']} Logged in.");
+            insertAuditLog($user['email'],"{$user['full_name']} Logged in.");
             echo "<script>alert('login seccessful'); window.location = 'admin.php';</script>";
             //redirect('index.php');
         }else {
