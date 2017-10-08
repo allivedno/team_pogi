@@ -18,7 +18,7 @@
 
             <link rel="stylesheet" href="layout/styles/products.css">
 </head>
-
+<?php require_once("header.php"); ?>
 <style type="text/css">
 h2,h5,a
 {
@@ -30,7 +30,7 @@ text-decoration: none;
 </style>
 
 <!--Navbar-->
-<?php require_once("header.php"); ?>
+
 <body style="background-color: white;">
 
 <?php require_once("config.connect.php");

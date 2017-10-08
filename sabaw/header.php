@@ -30,7 +30,15 @@ if(!empty($_SESSION[WEBAPP]['user'])){
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 
 <link href="css/login.css" rel="stylesheet">
+<style type="text/css">
+h2,h5,a
+{
+font-family: Roboto !important;
+font-weight: 600 !important;
+text-decoration: none;
+}
 
+</style>
 </head>
 <body>
 
