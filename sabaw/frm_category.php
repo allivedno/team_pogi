@@ -12,9 +12,9 @@ require_once('config.connect.php');
   <meta charset="UTF-8">
   <title>CATEGORIES</title>
   
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <script type="text/javascript">
 $(document).ready(function(){
     $(".show-text").click(function(){
@@ -34,14 +34,6 @@ $(document).ready(function(){
 
 
 
-
-  
-  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='http://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css'>
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-      <link rel="stylesheet" href="DatatableR/css/css.datatables.css">
 <style>
 #panel {
     padding-top: 50px;
@@ -76,7 +68,9 @@ $(document).ready(function(){
 
 
 </head>
+<?php
 
+?>
 <body>
   
   <div class="container">

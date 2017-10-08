@@ -6,10 +6,7 @@ require_once('config.connect.php');
 <head>
   <meta charset="UTF-8">
   <title>PRODUCTS</title>
-  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
     $(".show-text").click(function(){
@@ -30,13 +27,6 @@ $(document).ready(function(){
 
 
 
-  
-  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='http://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css'>
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-      <link rel="stylesheet" href="DatatableR/css/css.datatables.css">
 <style>
 #panel {
     padding-top: 50px;
@@ -77,8 +67,7 @@ $(document).ready(function(){
 
 
 
-<BR><BR><BR>
-
+<br><br><br>
 
     <h1>PRODUCTS</h1>
     <hr>

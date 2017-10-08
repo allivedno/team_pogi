@@ -3,12 +3,13 @@
 
 <html>
 
-<br><br><br>
 <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 offset-4">
-    
+                <div class="col-md-6 offset-3">
+                    <p class="h2 text-center mb-4">Login to your account</p><br><br>
+                </div>
+                <div class="col-md-6 offset-3">
                     <div class="login-box" >
                             <div class="login-box-body" >
                                 
@@ -17,7 +18,7 @@
                                     </div> -->
                                     <!-- /.login-logo -->
                               <br>
-                                <h3><p class="h5 text-center mb-4">Login to your Account</p></h3> 
+                            
                                                
                                          <!-- <div class="col-md-12 text-center">         -->
 

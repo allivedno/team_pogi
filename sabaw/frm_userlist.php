@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>PRODUCTS</title>
-  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
     $(".show-text").click(function(){
@@ -27,13 +24,7 @@ $(document).ready(function(){
 
 
 
-  
-  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='http://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css'>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-      <link rel="stylesheet" href="DatatableR/css/css.datatables.css">
 <style>
 #panel {
     padding-top: 50px;
@@ -75,8 +66,7 @@ require_once('config.connect.php');
   <div class="container">
 
 
-
-<BR><BR><BR>
+<br><br><br>
 
 
     <h1>USERS</h1>
@@ -104,8 +94,7 @@ require_once('config.connect.php');
 
 <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
   </div>
-  <br>
-  <hr>
+  
   <br>
 
   
@@ -116,6 +105,7 @@ require_once('config.connect.php');
         <th  role="gridcell">USER ID</th>
         <th  role="gridcell">EMAIL</th>
         <th  role="gridcell">FULL NAME</th>
+        <th  role="gridcell">STATUS</th>
         <th  >ACTION</th>
       </tr>
     </thead>
@@ -148,7 +138,13 @@ while ($fetch=mysqli_fetch_assoc($query))
   echo "<td style='vertical-align: middle;' ><center><p>";
     echo $fetch['full_name'];
   echo "</p></center></td>";
-
+echo "<td style='vertical-align: middle;' ><center><p>";
+          if ($fetch['is_deactivate']==0):
+            echo "Active";
+          else:
+           echo "Deactivated";
+         endif;
+          echo "</p></center></td>";
 
  
 
@@ -158,13 +154,19 @@ while ($fetch=mysqli_fetch_assoc($query))
   
   $Mymodal="Mymodal".$fetch['id'];
 $Yourmodal="Yourmodal".$fetch['id'];
-		echo '<center>
+$Yourmodal2="Yourmodal2".$fetch['id'];
+		echo '<center>';
+
+ if ($fetch['is_deactivate']==0):
+            echo '<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#'.$Yourmodal.'"><i class="glyphicon glyphicon-remove"></i></button></center>';
 
 
+          else:
+           echo '<button type="button" class="btn btn-info" data-toggle="modal" data-target="#'.$Yourmodal2.'"><i class="fa fa-check" aria-hidden="true"></i></button></center>';
 
-     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#'.$Yourmodal.'"><i class="glyphicon glyphicon-remove"></i></button></center>';
+         endif;
 
-
+     
 
 
 	echo "</td>";
@@ -192,10 +194,43 @@ echo
                 </div>
                 <div class='modal-body'>
                  
- <form  role='form' action='del_assign.php' method='post' id='branddelpost' enctype='multipart/form-data'>
+ <form  role='form' action='sub_user.php' method='post' enctype='multipart/form-data'>
     <div class='form-group'>
-      <input type='text' class='form-control' id='delassignId' name='delassignId'  style='opacity:0;' value='".$fetch['id']."'>
-      <label ><center>Are you sure you want to delete '".$fetch['full_name']."' ?</center></label>
+       <input type='hidden' class='form-control' name='action'  value='delete'>
+      <input type='hidden' class='form-control' id='delassignId' name='id'  value='".$fetch['id']."'>
+
+      <label ><center>Are you sure you want to deactivate '".$fetch['email']."' ?</center></label>
+      
+    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type='submit' name='submit' id='submit' class='btn btn-success'>Yes</button>
+                    <button type='button' class='btn btn-danger' data-dismiss='modal'>No</button>
+  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+";
+echo
+"
+    
+    <!-- Modal HTML -->
+    <div id='".$Yourmodal2."' class='modal fade'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+                    <h4 class='modal-title'>EDIT FORM </h4>
+                </div>
+                <div class='modal-body'>
+                 
+ <form  role='form' action='sub_user.php' method='post' enctype='multipart/form-data'>
+    <div class='form-group'>
+       <input type='hidden' class='form-control' name='action'  value='activate'>
+      <input type='hidden' class='form-control' name='id'  value='".$fetch['id']."'>
+
+      <label ><center>Are you sure you want to activate '".$fetch['email']."' ?</center></label>
       
     </div>
                 </div>

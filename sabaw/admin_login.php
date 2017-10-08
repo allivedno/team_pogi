@@ -32,11 +32,11 @@
 <?php require_once("header.php"); ?>
 </head>
 <body>
-<br><br>
+
 <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 offset-4">
+                <div class="col-md-6 offset-3">
     
                     <div class="login-box" >
                             <div class="login-box-body" >
@@ -46,7 +46,7 @@
                                     </div> -->
                                     <!-- /.login-logo -->
                               <br>
-                                <h3><p class="h5 text-center mb-4">Admin Login</p></h3> 
+                                <p class="h1 text-center mb-4">Admin Login</p><br><br>
                                                
                                          <!-- <div class="col-md-12 text-center">         -->
 
@@ -66,7 +66,7 @@
                                                                     <input name="password" type="password" class="form-control" id="defaultForm-pass" required>
                                                                       <label for="defaultForm-pass">Your password</label>
                                                             </div>
-                                                             <div class="help-block text-right"><a href="frm_forgotpass.php">Forget the password ?</a></div>
+                                                             <!-- <div class="help-block text-right"><a href="frm_forgotpass.php">Forget the password ?</a></div> -->
                                                         </div>
                                                         <div class="form-group">
                                                              <button type="submit" class="btn btn-primary btn-block">Sign in</button>

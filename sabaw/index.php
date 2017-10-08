@@ -371,7 +371,7 @@ Thank you.</p>
 
         <!--Grid column-->
         <div class="col-md-8 col-xl-9">
-            <form id ="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id ="contact-form" name="contact-form" action="sendfeedback.php" method="POST">
 
                 <!--Grid row-->
                 <div class="row">
@@ -391,7 +391,7 @@ Thank you.</p>
                     <div class="col-md-6">
                         <div class="md-form">
                             <div class="md-form">
-                                <input type="text" id="email" name="email" class="form-control">
+                                <input type="email" id="email" name="email" class="form-control">
                                 <label for="email" class="">Your email</label>
                             </div>
                         </div>
@@ -427,12 +427,15 @@ Thank you.</p>
                 </div>
                 <!--Grid row-->
 
-            </form>
+            
 
             <div class="center-on-small-only">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+              <button type="submit" class="btn btn-primary btn-block" name="submit">Send</button>
+               
             </div>
             <div class="status" id="status"></div>
+
+            </form>
         </div>
         <!--Grid column-->
 

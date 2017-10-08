@@ -3,8 +3,10 @@
 
     require_once("support/config.php");
 
-
-    $user_info = getUserDetails($_SESSION[WEBAPP]['user']); 
+if(!empty($_SESSION[WEBAPP]['user'])){
+   $user_info = getUserDetails($_SESSION[WEBAPP]['user']); 
+  }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +32,11 @@
 <link href="css/login.css" rel="stylesheet">
 
 </head>
-<div class="bgded" style="background-image:url('img/banner2.png'); height: 220px; "> 
+<body>
+
+
+
+<div class="bgded" style="background-image:url('img/banner2.png');  height:290px"> 
   <!-- ################################################################################################ -->
   <div class="wrapper row1" >
     <header id="header" class="hoc clear"> 
@@ -55,14 +61,23 @@
             <?php else: ?>
                 <li class="drop"><a href="#"> My Account </a> 
 
+                  
                 <ul>
-                    <a href="account.php"><?php echo $user_info['full_name']; ?></a>
-                    <a href="logout.php">Logout</a>
-                </ul>
-</li>
-            <?php endif; ?>      
 
-<body>
+                    <a href="account.php"><?php echo $user_info['full_name']; ?></a>
+                     <a href="account.php">My Orders</a>
+                    <a href="logout.php">Logout</a>
+
+                </ul>
+                
+          </li>
+            <?php endif; ?>     
+        </ul>
+      </nav>
+  </div>
+</div> 
+
+</body>
 
 
 
