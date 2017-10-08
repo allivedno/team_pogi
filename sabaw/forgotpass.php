@@ -42,7 +42,7 @@ if (!empty($_GET['email']) && !empty($_GET['code'])) {
                             //var_dump($email_settings);
                             //emailer($username,$password,$from,$to,$subject,$body,$host='tls://smtp.gmail.com',$port=465
                 PHPemailer('glyphinfo17@gmail.com','glyph2017',"glypp@flowtork.com",$user_information['email'],"Forgot Password",$message,'tls://smtp.gmail.com',587);
-          
+                
                 echo "<script>alert('a confirmation email has been sent to ".$user_information['email'].".'); window.location = 'index.php';</script>";
 
 

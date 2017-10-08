@@ -442,14 +442,15 @@ Thank you.</p>
             <ul class="contact-icons">
                 <li><i class="fa fa-map-marker fa-2x"></i>
 Contact Address: <br>
-Unit 1, 2 & 10 CIFRA Building<br>
-#641 Boni Avenue, Mandaluyong City<br>
+
+#352 Wayan St. Barangka Ilaya Mandaluyong City<br>
 1550 PHL<br>
                 </li>
 
                 <li><i class="fa fa-phone fa-2x"></i>
-                  Telephone:<br> + (63-2) 470 43 58<br>
-Fax: + (63-2) 534 12 17
+                  Telephone:<br> (02) 532-40-58<br>
+                  (02) 470-43-58<br>
+Fax: (02) 717-41-88
                 </li>
 
             </ul>
@@ -477,68 +478,6 @@ Fax: + (63-2) 534 12 17
 </section>
 
 
-<<<<<<< HEAD
-=======
-<br><br><br>
-<section id="contactus">
-<div class="container">
-<div class="col-md-12">
-<h2>Contact Us</h2>
-<h3>Flowtork Technologies Corporation </h3><br>
-Email: info@flowtork.com<br>
-http://www.flowtork.com
-<br><br>
-
-
-
-</div>
-<div class="col-md-12">
-<div class="row">
-<div class="col-md-6">
-<br><br>    
-
-<h4>HEAD OFFICE</h4>
-<br>
-#352 Wayan St. <br>Barangka Ilaya, <br>
-Mandaluyong City 1550 Philippines<br>
-<br>    
-Contact No(s):<br>
-Sales Department : (Direct Lines)      &nbsp; &nbsp;  +(63-2) 470 43 58 <br>
-+(63-2) 534 12 17<br>
-Accounting & HR Department :        &nbsp; &nbsp; &nbsp; &nbsp; +(63-2) 532 40 58<br>
-Projects and Services Department :      +(63-2) 748 97 36<br>
-</div>
-
-
-<div class="col-md-6">
-<br><br>    
-
-<h4>CEBU OFFICE</h4>
-<br>
-4th Floor Ongtiak Building<br>
-General Maxilom Avenue
-<br>
-Cebu City 6000 Philippines<br>
-<br>    
-Contact No(s):<br>
-Sales and Services Department :
-    +(63-32) 406 33 50 <br>
- &nbsp; &nbsp; &nbsp; &nbsp;+(63-32) 250 65 82<br>
- &nbsp; &nbsp; &nbsp; &nbsp;+(63-917) 863 23 66<br>
-  &nbsp; &nbsp; &nbsp; &nbsp;+(63-939) 920 91 08<br>
-</div>
-
-
-
-</div>
-</div>
-</div>
-
-
-
-</section>
-
->>>>>>> 79cf663935c2a22db8a06e54c675e298241980f6
 
     <!-- /Start your project here-->
 

@@ -1,3 +1,6 @@
+<?php
+require_once('config.connect.php');
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -5,7 +8,7 @@
   <title>PRODUCTS</title>
   
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -30,7 +33,7 @@ $(document).ready(function(){
   
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='http://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
       <link rel="stylesheet" href="DatatableR/css/css.datatables.css">
@@ -68,14 +71,13 @@ $(document).ready(function(){
 
 
 </head>
-<?php
-require_once('config.connect.php');
-?>
+
 <body>
   <div class="container">
 
 
 
+<BR><BR><BR>
 
 
     <h1>PRODUCTS</h1>
@@ -278,7 +280,7 @@ echo
   
 </div>
 
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
 <script src='http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js'></script>
 <script src='http://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js'></script>
 

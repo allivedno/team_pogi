@@ -2,6 +2,9 @@
 <?php
 
     require_once("support/config.php");
+
+
+    $user_info = getUserDetails($_SESSION[WEBAPP]['user']); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,11 +53,11 @@
                 <li>
                     <a href="frmlogin.php">Login</a>      
             <?php else: ?>
-                <li class="drop"><a href="frmlogin.php"> <?php echo $_SESSION[WEBAPP]["user"]; ?> </a> 
+                <li class="drop"><a href="#"> My Account </a> 
 
                 <ul>
-                    <a>Ldasda</a>
-                    <a>Ldasasdda</a>
+                    <a href="account.php"><?php echo $user_info['full_name']; ?></a>
+                    <a href="logout.php">Logout</a>
                 </ul>
 </li>
             <?php endif; ?>      

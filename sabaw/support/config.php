@@ -113,11 +113,14 @@ function PHPemailer($username, $password, $from, $to, $subject, $body, $host='tl
     return $mail->send();
 }
 
-function getEmpDetails($emp_id){
+function getUserDetails($emp_id){
 	global $con;
-	return $con->myQuery("SELECT * FROM employees WHERE id=? LIMIT 1",array($emp_id))->fetch(PDO::FETCH_ASSOC);
+	   return $con->myQuery("SELECT * FROM user WHERE id=? LIMIT 1",array($emp_id))->fetch(PDO::FETCH_ASSOC);
 }
-
+function getAdminDetails($admin_id){
+    global $con;
+       return $con->myQuery("SELECT * FROM admin_account WHERE id=? LIMIT 1",array($admin_id))->fetch(PDO::FETCH_ASSOC);
+}
 
 function email_template($header, $message)
 {
@@ -220,6 +223,6 @@ html;
 
 /* END SPECIFIC TO WEBAPP */
 	require_once('class.myPDO.php');
-	$con=new myPDO('flowtork','root','miguel');
+	$con=new myPDO('flowtork','root','');
 
 ?>

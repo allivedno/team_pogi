@@ -22,7 +22,7 @@
 
             // echo "login seccessful";
             
-            $_SESSION[WEBAPP]['user'] = $user['email'];
+            $_SESSION[WEBAPP]['user'] = $user['id'];
 
             echo "<script>alert('login seccessful'); window.location = 'index.php';</script>";
             
