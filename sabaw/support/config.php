@@ -215,6 +215,6 @@ html;
 
 /* END SPECIFIC TO WEBAPP */
 	require_once('class.myPDO.php');
-	$con=new myPDO('flowtork','root','miguel');
+	$con=new myPDO('flowtork','root','');
 
 ?>
