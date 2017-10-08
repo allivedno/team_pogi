@@ -250,9 +250,7 @@
     <!--Panel 1-->
     <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-            reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-            porro voluptate odit minima.</p>
+        <p></p>
     </div>
     <!--/.Panel 1-->
     <!--Panel 2-->
