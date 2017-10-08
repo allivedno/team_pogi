@@ -90,8 +90,8 @@ echo '
     <div class="animated fadeInUp">
     <p style="font-size:1.5em;text-align: justify;">'.$row['brand_desc'].'</p>
 
-    <a href="viewprod.php?x='.$row['brand_id'].'" style="color : white;"> View Products</a>   &nbsp;
-    <i class="fa fa-chevron-right"> </i> 
+    <a href="viewprod.php?x='.$row['brand_id'].'" style="color : white;background-color:#0d47a1; padding:10px;"> View Products  &nbsp;
+    <i class="fa fa-chevron-right"> </i> </a> 
 
     </div>
     </span>
@@ -117,10 +117,10 @@ echo '
     <div class="animated fadeInUp">
     <p style="font-size:1.5em;text-align: justify;">'.$row['brand_desc'].'</p>
 
-    <a href="viewprod.php?x='.$row['brand_id'].'" style="color : white;"> View Products</a>   &nbsp;
-    <i class="fa fa-chevron-right"> </i> 
+    <a href="viewprod.php?x='.$row['brand_id'].'" style="color : white; background-color:#0d47a1; padding:10px;"> View Products  &nbsp;
+    <i class="fa fa-chevron-right"> </i> </a> 
 
-    
+
     </div>
 </span>
 </div>
