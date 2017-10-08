@@ -1,7 +1,10 @@
 
+
 <?php 
 require_once('support/config.php');
 
+
+                      
 
 
   if(empty($_SESSION[WEBAPP]['user'])){
@@ -81,25 +84,35 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
               <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">4</span>
+                  <?php $recordsTotal=$con->myQuery("SELECT COUNT(id) FROM `feedback`")->fetchColumn(); 
+                  $feed = $con->myQuery("SELECT * FROM feedback"); ?>
+                  <span class="label label-success"><?php echo $recordsTotal; ?></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
+                  
+ 
+                  <li class="header">You have <?php echo $recordsTotal; ?> feedback/s</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
+                      <?php while($rows = $feed->fetch(PDO::FETCH_ASSOC)): 
+                      
+
+                      ?>
                       <li><!-- start message -->
-                        <a href="#">
+                        <a href="admin.php?form=feedback">
                           <div class="pull-left">
-                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="defUser.png" class="img-circle">
                           </div>
                           <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                            <?php echo $rows['name']; ?> 
+                          
+                            <small><i class="fa fa-clock-o"></i> 60 mins</small>
                           </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                          <p><?php echo $rows['message']; ?> </p>
                         </a>
                       </li><!-- end message -->
+                    <?php endwhile; ?>
                     </ul>
                   </li>
                   <li class="footer"><a href="#">See All Messages</a></li>
@@ -109,16 +122,19 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
               <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">10</span>
+                   <?php $userTotal=$con->myQuery("SELECT COUNT(id) FROM `user`")->fetchColumn(); 
+                  $user = $con->myQuery("SELECT * FROM user"); ?>
+                  <span class="label label-warning"><?php echo $userTotal; ?></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
+                  
+                  <li class="header">You have <?php echo $userTotal; ?> notifications</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
                       <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        <a href="admin.php?form=user">
+                          <i class="fa fa-users text-aqua"></i> <?php echo $userTotal; ?> new members joined today
                         </a>
                       </li>
                     </ul>
@@ -127,36 +143,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
                 </ul>
               </li>
               <!-- Tasks: style can be found in dropdown.less -->
-              <li class="dropdown tasks-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-flag-o"></i>
-                  <span class="label label-danger">9</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 9 tasks</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Design some buttons
-                            <small class="pull-right">20%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">20% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                    </ul>
-                  </li>
-                  <li class="footer">
-                    <a href="#">View all tasks</a>
-                  </li>
-                </ul>
-              </li>
+              
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -294,7 +281,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
             </li>
             <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
             <li class="header">LABELS</li>
-            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>PROFILE</span></a></li>
+            <li><a href="admin.php?form=profile"><i class="fa fa-circle-o text-red"></i> <span>PROFILE</span></a></li>
             <li><a href="admin.php?form=changepass"><i class="fa fa-circle-o text-yellow"></i> <span>CHANGE PASSWORD</span></a></li>
             <li><a href="admin.php?form=defaultpass"><i class="fa fa-circle-o text-aqua"></i> <span>DEFAULT PASSWORD</span></a></li>
           </ul>
@@ -330,6 +317,11 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
 
   <?php 
     if (!empty($_GET['form'])) {
+       if ($_GET['form'] == "profile") {
+
+          require_once("adminprofile.php"); 
+
+      }
        if ($_GET['form'] == "user") {
 
           require_once("frm_userlist.php"); 

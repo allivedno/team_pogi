@@ -2,7 +2,7 @@
 require_once("support/config.php");
 $error = '';
 
-$user_info = getUserDetails($_SESSION[WEBAPP]['user']); 
+$admin_info = getAdminDetails($_SESSION[WEBAPP]['user']); 
 
  $input = $_POST;
 if (isset($_POST['submit']))
@@ -38,22 +38,41 @@ if (isset($_POST['submit']))
             <div class="row">
                
                 <div class="col-lg-12 text-center">
-                     <h3><p class="h4 text-center mb-4">Account Setting</p></h3> 
+                     <h3><p class="h4 text-center mb-4">Profile</p></h3> 
     
                     
                 </div>
             </div><br><br>
-                      <form action="adminchangepass.php" method="POST"> 
+                      <form  role="form" action="saveadminprofile.php" method="post" enctype="multipart/form-data" >
+                              <input type="hidden" class="form-control" value="<?php echo $admin_info['id']; ?>" name="id">
+                                   
+                              
                               <div class="col-lg-6 col-sm-offset-3">
+                                <div class="col-lg-12 col-sm-offset-0 text-center">
+                                  <img src="<?php echo $admin_info['picture']; ?>" class="img-circle" height="140px" alt="User Image">
+                                   
+          
+                               
+                          
+
+                                    <input type="file" name="userPic" accept="image/*" class="form-control"><br><br><br>
+                               
+                                </div>
+
                                 <div class="md-form">
-                                    <label for="password">Your Password</label>
-                                   <input type="password" class="form-control" id="password" name="password" required data-validation-required-message="Please enter your password.">
+                                    <label>Username</label>
+                                   <input type="text" class="form-control" value="<?php echo $admin_info['email']; ?>" name="username" required>
                                    
                                 </div>
 
                                 <div class="md-form">
-                                    <label for="password">Confirm Password</label>
-                                   <input type="password" class="form-control" id="password" name="password2" required data-validation-required-message="Please enter your password.">
+                                    <label>Name</label>
+                                   <input type="text" class="form-control" value="<?php echo $admin_info['full_name']; ?>" name="name" required>
+                                   
+                                </div>
+                                <div class="md-form">
+                                    <label>Contact No.</label>
+                                   <input type="text" class="form-control" value="<?php echo $admin_info['contact_no']; ?>" name="contact" required>
                                    
                                 </div><br><br>
                                 <div class="md-form">
