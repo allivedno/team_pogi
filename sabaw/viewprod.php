@@ -229,9 +229,19 @@ echo '
 </div>
 
             <!--Footer-->
-        
+         
+';
+  if(!empty($_SESSION[WEBAPP]['user'])){
+
+    echo "<form action='addquot.php' method='post'><div class='col-md-3 offset-6'><span aria-hidden='true'> Quantity </span><input type='number' name='qty'>";
+    echo '<input type="hidden" name="customer_id" value='.$_SESSION[WEBAPP]['user'].'>';
+    echo '</div><input type="hidden" name="prod_id" value='.$array[array_search($value,$array)].'><div class="col-sm-3 offset-9"><button type="submit" class="btn btn-primary" >
+                    <span aria-hidden="true"> Add to quototation </span>
+                </button>';
+    echo "</div></form><div class='modal-footer'>";
+  }
            
-            <div class="modal-footer">
+  echo '
           <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"> Close </span>
                 </button>

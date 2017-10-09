@@ -123,18 +123,25 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-bell-o"></i>
                    <?php $userTotal=$con->myQuery("SELECT COUNT(id) FROM `user`")->fetchColumn(); 
+                  $quotTotal=$con->myQuery("SELECT COUNT(id) FROM `quotation`")->fetchColumn(); 
                   $user = $con->myQuery("SELECT * FROM user"); ?>
-                  <span class="label label-warning"><?php echo $userTotal; ?></span>
+                  <span class="label label-warning"><?php echo $userTotal+$quotTotal; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   
-                  <li class="header">You have <?php echo $userTotal; ?> notifications</li>
+                  <li class="header">You have <?php echo $userTotal+$quotTotal; ?> notifications</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
                       <li>
                         <a href="admin.php?form=user">
                           <i class="fa fa-users text-aqua"></i> <?php echo $userTotal; ?> new members joined today
+                        </a>
+                      </li>
+                       <li>
+                        <a href="admin.php?form=quotation">
+                          
+                          <i class="fa fa-users text-aqua"></i> <?php echo $quotTotal; ?> new quotation today
                         </a>
                       </li>
                     </ul>
@@ -166,7 +173,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                      <a href="admin.php?form=profile" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
                       <a href="adminlogout.php" class="btn btn-default btn-flat">Sign out</a>
@@ -200,7 +207,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
-              <a href="#">
+              <a href="admin.php">
                 <i class="fa fa-dashboard"></i> <span>DASHBOARD</span> 
               </a>
               
@@ -256,7 +263,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
              
             </li>
              <li class="treeview">
-              <a href="#">
+              <a href="admin.php?form=report">
                 <i class="fa fa-files-o"></i>
                 <span>REPORTS</span>
                <!--  <span class="label label-primary pull-right">4</span> -->
@@ -264,7 +271,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
              
             </li>
              <li class="treeview">
-              <a href="#">
+              <a href="admin.php?form=quotation">
                 <i class="fa fa-files-o"></i>
                 <span>QUOTATION</span>
                <!--  <span class="label label-primary pull-right">4</span> -->
@@ -285,7 +292,9 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
             <li><a href="admin.php?form=changepass"><i class="fa fa-circle-o text-yellow"></i> <span>CHANGE PASSWORD</span></a></li>
             <li><a href="admin.php?form=defaultpass"><i class="fa fa-circle-o text-aqua"></i> <span>DEFAULT PASSWORD</span></a></li>
           </ul>
+
         </section>
+        
         <!-- /.sidebar -->
       </aside>
 
@@ -317,6 +326,7 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
 
   <?php 
     if (!empty($_GET['form'])) {
+
       if ($_GET['form'] == "auditlog") {
 
           require_once("audit_log.php"); 
@@ -374,6 +384,18 @@ $admin_info = getAdminDetails($_SESSION[WEBAPP]['user']);
           require_once("defaultpass.php"); 
 
       }
+      if ($_GET['form'] == "quotation") {
+
+          require_once("frm_quot.php"); 
+
+      }
+      if ($_GET['form'] == "report") {
+
+          require_once("frm_report.php"); 
+
+      }
+    } else {
+      require_once("dashboard.php"); 
     }
   ?>
 </html>

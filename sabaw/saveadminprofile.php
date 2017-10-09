@@ -82,6 +82,8 @@ require_once('support/config.php');
 
 							  // $table2c = "INSERT INTO admin_account (email,password,full_name,contact_no,picture) VALUES ('$username','$def','$name','$contact','$userPic')";
 							 $con->myQuery("UPDATE admin_account SET `email`='$username',`full_name`='$name',`contact_no`='$contact',`picture`='$userPic' WHERE id = ?",array($id));
+							 
+							 
 							 echo "<script>alert('Successfully Saved'); window.location ='admin.php?form=profile' </script>";
 							      
 			} else {

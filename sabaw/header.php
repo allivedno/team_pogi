@@ -44,7 +44,7 @@ text-decoration: none;
 
 
 
-<div class="bgded img-fluid" style="background-image:url('img/banner2.png');background-size:  100% 100%;background-repeat:  no-repeat;    height:310px"> 
+<div class="bgded img-fluid" style="background-image:url('img/banner2.png');background-size:  100% 100%;background-repeat:  no-repeat;    height:220px"> 
   <!-- ################################################################################################ -->
   <div class="wrapper row1" >
     <header id="header" class="hoc clear"> 
@@ -73,7 +73,7 @@ text-decoration: none;
                 <ul>
 
                     <a href="account.php"><?php echo $user_info['full_name']; ?></a>
-                     <a href="account.php">My Orders</a>
+                     <a href="myorder.php">My Orders</a>
                     <a href="logout.php">Logout</a>
 
                 </ul>

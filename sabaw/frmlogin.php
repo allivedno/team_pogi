@@ -39,6 +39,7 @@
    															          <label for="defaultForm-pass">Your password</label>
                                                             </div>
                                                              <div class="help-block text-right"><a href="frm_forgotpass.php">Forget the password ?</a></div>
+
                                                         </div>
                                                         <div class="form-group">
                                                              <button type="submit" class="btn btn-primary btn-block">Sign in</button>
@@ -48,7 +49,8 @@
                                                         </div>
                                                  </form>
                                                   	<div class="bottom text-center">
-	                                                		New here ? <a class="ex1" href="frmsignup.php"><b>Join Us</b></a>
+	                                                		New here ? <a class="ex1" href="frmsignup.php"><b>Join Us</b></a><br><br><br>
+                                                            
 	                                            	</div>
 	                                     </div>
                             </div>

@@ -102,6 +102,10 @@ function getAdminDetails($admin_id){
     global $con;
        return $con->myQuery("SELECT * FROM admin_account WHERE id=? LIMIT 1",array($admin_id))->fetch(PDO::FETCH_ASSOC);
 }
+function getProductDetails($pro_id){
+    global $con;
+       return $con->myQuery("SELECT * FROM part WHERE part_id=? LIMIT 1",array($pro_id))->fetch(PDO::FETCH_ASSOC);
+}
 function insertAuditLog($user, $action)
 {
     global $con;
@@ -216,6 +220,6 @@ html;
 
 /* END SPECIFIC TO WEBAPP */
 	require_once('class.myPDO.php');
-	$con=new myPDO('flowtork','root','ondevilla');
+	$con=new myPDO('flowtork','root','');
 
 ?>

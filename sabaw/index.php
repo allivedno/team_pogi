@@ -149,11 +149,11 @@
         <!-- <footer><a class="btn" href="#">Read More &raquo;</a></footer> -->
       </div>
       <div class="one_third">
-        <p><strong>Malesuada congue pulvinar</strong></p>
+        <p><strong></strong></p>
         <figure class="videocontainer"> 
           <!-- Important: Any type of video called via "iframe" must be in a container using class="videocontainer" -->
           <iframe src="https://www.youtube.com/watch?v=SDTZ7iX4vTQ  " allowfullscreen style="border:none;"></iframe>
-          <figcaption>Lacus vitae ullamcorper cum sociis natoque penatibus et magnis dis.</figcaption>
+          <figcaption></figcaption>
         </figure>
       </div>
     </div>
@@ -492,47 +492,6 @@ http://www.flowtork.com
 
 
 
-</div>
-<div class="col-md-12">
-<div class="row">
-<div class="col-md-6">
-<br><br>    
-
-<h4>HEAD OFFICE</h4>
-<br>
-#352 Wayan St. <br>Barangka Ilaya, <br>
-Mandaluyong City 1550 Philippines<br>
-<br>    
-Contact No(s):<br>
-Sales Department : (Direct Lines)      &nbsp; &nbsp;  +(63-2) 470 43 58 <br>
-+(63-2) 534 12 17<br>
-Accounting & HR Department :        &nbsp; &nbsp; &nbsp; &nbsp; +(63-2) 532 40 58<br>
-Projects and Services Department :      +(63-2) 748 97 36<br>
-</div>
-
-
-<div class="col-md-6">
-<br><br>    
-
-<h4>CEBU OFFICE</h4>
-<br>
-4th Floor Ongtiak Building<br>
-General Maxilom Avenue
-<br>
-Cebu City 6000 Philippines<br>
-<br>    
-Contact No(s):<br>
-Sales and Services Department :
-    +(63-32) 406 33 50 <br>
- &nbsp; &nbsp; &nbsp; &nbsp;+(63-32) 250 65 82<br>
- &nbsp; &nbsp; &nbsp; &nbsp;+(63-917) 863 23 66<br>
-  &nbsp; &nbsp; &nbsp; &nbsp;+(63-939) 920 91 08<br>
-</div>
-
-
-
-</div>
-</div>
 </div>
 
 

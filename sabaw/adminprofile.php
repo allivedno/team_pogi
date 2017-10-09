@@ -46,10 +46,10 @@ if (isset($_POST['submit']))
                       <form  role="form" action="saveadminprofile.php" method="post" enctype="multipart/form-data" >
                               <input type="hidden" class="form-control" value="<?php echo $admin_info['id']; ?>" name="id">
                                    
-                              
+                            
                               <div class="col-lg-6 col-sm-offset-3">
                                 <div class="col-lg-12 col-sm-offset-0 text-center">
-                                  <img src="<?php echo $admin_info['picture']; ?>" class="img-circle" height="140px" alt="User Image">
+                                  <img src="<?php echo $admin_info['picture']; ?>" height="140px" alt="User Image">
                                    
           
                                
